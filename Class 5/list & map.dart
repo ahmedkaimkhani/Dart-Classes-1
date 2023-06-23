@@ -7,4 +7,6 @@ void main (){
   };
   print(students1Records["name"][1]);
   print(students1Records["rollNo"][1]);
+  // Map students2Records = {"name":'Ahmed', "rollNo": 20};
+  // Map students3Records = {"name":'Usman', "rollNo": 22};
 }
