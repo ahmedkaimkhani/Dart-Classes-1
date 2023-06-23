@@ -1,12 +1,8 @@
 void main (){
-  List studentsName = ['Ahmed', 'Usman'];
-
-  Map students1Records = {
-    "name" : ['Ahmed','Usman'],
-    "rollNo" : [20, 22]
-  };
-  print(students1Records["name"][1]);
-  print(students1Records["rollNo"][1]);
-  // Map students2Records = {"name":'Ahmed', "rollNo": 20};
-  // Map students3Records = {"name":'Usman', "rollNo": 22};
+  List students = [
+    {"name": 'Ahmed', "rollNo": 20},
+    {"name": 'Usman', "rollNo": 22}
+  ];
+  print(students[0]["name"]);
+  print(students[1]["name"]);
 }
