@@ -1,5 +1,5 @@
 void main (){ 
-  var fruit = {
+  var students = {
     1 : 'Ahmed',
     2 : 'Usman',
     3 : 'Asim',
@@ -9,9 +9,9 @@ void main (){
   // print(fruit);
 
   // putIfAbsent method if key don't exist in map than add, if exist than print previous one
-   var abc = fruit.putIfAbsent(3, () => 'Ali');
+   var abc = students.putIfAbsent(3, () => 'Ali');
   print(abc);
 
-  var abc2 = fruit.putIfAbsent(5, () => 'Hamza');
+  var abc2 = students.putIfAbsent(5, () => 'Hamza');
   print(abc2);
 }
