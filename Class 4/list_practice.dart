@@ -1,8 +1,8 @@
 void main (){
-  // List<String> we just use String in list 
-  List<String> studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil'];
-
-  print(studentsNames.length);
+  // .update method to update 
+ String name = 'Ahmed';
+ name = 'Usman';
+ print(name);
 }
 
   // var datatype
@@ -16,3 +16,16 @@ void main (){
     // List<String> we just use String in list 
   // List<String> studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil'];
   // print(studentsNames[5]);
+
+    // List<String> we just use String in list.lenght method
+  // List<String> studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil'];
+  // print(studentsNames.length);
+
+    // .first .last method
+  // List<String> studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil'];
+  // print(studentsNames.first);
+
+    // .update method to update 
+//  String name = 'Ahmed';
+//  name = 'Usman';
+//  print(name);
