@@ -1,8 +1,9 @@
-void main (){
+void main() {
   // Replace Range Method
- List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
- studentsNames.replaceRange(studentsNames.length - 1, studentsNames.length, ['Me']);
- print(studentsNames);
+  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
+  // for getting last element
+  studentsNames.replaceRange(0, 3, ['Me']);
+  print(studentsNames);
 }
 
   // var datatype
@@ -44,4 +45,10 @@ void main (){
 // Replace Range Method
 //  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
 //  studentsNames.replaceRange(1, 3, ['You','Me']);
+//  print(studentsNames);
+
+// Replace Range Method
+//  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
+ // for getting last element
+//  studentsNames.replaceRange(studentsNames.length - 1, studentsNames.length, ['Me']);
 //  print(studentsNames);
