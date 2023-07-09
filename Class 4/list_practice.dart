@@ -1,8 +1,8 @@
 void main (){
   // .update method to update 
- String name = 'Ahmed';
- name = 'Usman';
- print(name);
+ List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
+ studentsNames[0] = 'Ahmi';
+ print(studentsNames);
 }
 
   // var datatype
@@ -12,6 +12,7 @@ void main (){
     // List datatype
   // List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
   // print(studentsNames[5]);
+  // print(studentsNames.elementAt(3));
 
     // List<String> we just use String in list 
   // List<String> studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil'];
