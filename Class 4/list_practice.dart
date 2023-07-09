@@ -1,7 +1,7 @@
 void main (){
   // Replace Range Method
  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
- studentsNames.replaceRange(1, 3, ['You','Me']);
+ studentsNames.replaceRange(studentsNames.length - 1, studentsNames.length, ['Me']);
  print(studentsNames);
 }
 
@@ -40,3 +40,8 @@ void main (){
 //  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
  // use lenght to get index 
 //  print(studentsNames[studentsNames.length - 2]);
+
+// Replace Range Method
+//  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
+//  studentsNames.replaceRange(1, 3, ['You','Me']);
+//  print(studentsNames);
