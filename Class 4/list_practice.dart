@@ -1,7 +1,7 @@
 void main (){
-  // .update method to update 
- List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
- studentsNames[0] = 'Ahmi';
+  // Replace Range Method
+ List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 'Babu'];
+ studentsNames.replaceRange(1, 3, ['You','Me']);
  print(studentsNames);
 }
 
@@ -30,3 +30,13 @@ void main (){
 //  String name = 'Ahmed';
 //  name = 'Usman';
 //  print(name);
+
+  // .update method to update 
+//  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
+//  studentsNames[0] = 'Ahmi';
+//  print(studentsNames);
+
+// .lenght method
+//  List studentsNames = ['Ahmed', 'Usman', 'Asim', 'Bazil', 4, true];
+ // use lenght to get index 
+//  print(studentsNames[studentsNames.length - 2]);
