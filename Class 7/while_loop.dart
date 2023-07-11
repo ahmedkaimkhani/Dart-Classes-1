@@ -1,17 +1,20 @@
 import 'dart:io';
 
 void main (){
-  // we use int.parse to plus+ 2+3 =5 values if we don't use use int.parse it'll concadinate 2+3=23.
-  var email = stdin.readLineSync();
+   var email = stdin.readLineSync();
    var password = stdin.readLineSync();
    
-   if ((email == 'ahmed@gmail.com') && (password == '123456')){
+   bool login = false;
+   while(login == false){
+    if (email == 'ahmed@gmail.com' && password == '123456'){
     print('Login Succesful');
+    login = true;
    } else {
     print('Login Failed');
    }
+   }
 }
-
+// (1)
 // While Loop
 // simple understanding for while loop with giving range
 // int abc = 0;
@@ -19,3 +22,13 @@ void main (){
 //     print(abc);
 //     abc++;
 //   }
+
+// (2)
+// var email = stdin.readLineSync();
+//    var password = stdin.readLineSync();
+   
+//    if ((email == 'ahmed@gmail.com') && (password == '123456')){
+//     print('Login Succesful');
+//    } else {
+//     print('Login Failed');
+//    }
