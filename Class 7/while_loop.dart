@@ -8,9 +8,11 @@ void main (){
    while(login == false){
     if (email == 'ahmed@gmail.com' && password == '123456'){
     print('Login Succesful');
-    login = true;
+    login = false;
    } else {
     print('Login Failed');
+    email = stdin.readLineSync();
+    password = stdin.readLineSync();
    }
    }
 }
