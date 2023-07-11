@@ -1,18 +1,18 @@
 import 'dart:io';
 
 void main (){
-   var email = stdin.readLineSync();
-   var password = stdin.readLineSync();
+   var email ;
+   var password ;
    
    bool login = false;
    while(login == false){
+    email = stdin.readLineSync()!;
+    password = stdin.readLineSync()!;
     if (email == 'ahmed@gmail.com' && password == '123456'){
     print('Login Succesful');
-    login = false;
+    login = true;
    } else {
     print('Login Failed');
-    email = stdin.readLineSync();
-    password = stdin.readLineSync();
    }
    }
 }
@@ -34,3 +34,20 @@ void main (){
 //    } else {
 //     print('Login Failed');
 //    }
+
+// (3)
+// take userinput in else condition and doing same work
+  //  var email = stdin.readLineSync();
+  //  var password = stdin.readLineSync();
+   
+  //  bool login = false;
+  //  while(login == false){
+  //   if (email == 'ahmed@gmail.com' && password == '123456'){
+  //   print('Login Succesful');
+  //   login = true;
+  //  } else {
+  //   print('Login Failed');
+  //   email = stdin.readLineSync();
+  //   password = stdin.readLineSync();
+  //  }
+  //  }
