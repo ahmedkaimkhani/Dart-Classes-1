@@ -14,8 +14,9 @@ studentRecords (){
 
   if (percentage > 50){
     print('$name Pass');
+    return '$name Pass';
   } else {
     print('$name Fail');
+    return '$name Fail';
   }
-  return studentRecords();
 }
