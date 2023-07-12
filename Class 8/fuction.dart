@@ -1,7 +1,5 @@
 void main (){
-  studentRecords();
-  print('again');
-  studentRecords();
+  var abc = studentRecords();
 }
 
 studentRecords (){
