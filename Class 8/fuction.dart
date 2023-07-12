@@ -1,4 +1,10 @@
 void main (){
+  studentRecords();
+  print('again');
+  studentRecords();
+}
+
+studentRecords (){
   String name = 'Ahmed';
   int subject1 = 77;
   int subject2 = 89;
