@@ -17,4 +17,5 @@ studentRecords (){
   } else {
     print('$name Fail');
   }
+  return studentRecords();
 }
