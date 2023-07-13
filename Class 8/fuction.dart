@@ -138,3 +138,19 @@ void main (){
 //   }
 //   print('=======');
 //  }
+
+//9: Table loop Function if you want to print multipale tables 
+// without sequence.
+// void main (){
+//   List<int> number = [2, 5, 7, 13, 7, 15];
+//   for (int i in number){
+//     numberTable(i);
+//   }
+// }
+
+//  numberTable (num number){
+//   for (int i = 1; i <= 10; i++){
+//     print("$number x $i = ${number*i}");
+//   }
+//   print('=======');
+//  }
