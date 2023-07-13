@@ -1,5 +1,5 @@
 void main (){
-  markSheet(
+  String abc = markSheet(
     name: 'Ahmed', 
     rollno: 05, 
     english: 70, 
@@ -8,7 +8,10 @@ void main (){
     physics: 72, 
     chemistry: 81
     );
+    print(abc);
 }
+
+
 
 markSheet ({
   required String name, 
@@ -20,9 +23,9 @@ markSheet ({
   required num chemistry
   })
   { 
-    num obtainMarks = 0;
     String grade = '';
     num totalMarks = 500;
+    num obtainMarks = (english + urdu + math + physics + chemistry);
     var percentage = (obtainMarks / totalMarks) * 100;
 
     if (percentage >= 80){
