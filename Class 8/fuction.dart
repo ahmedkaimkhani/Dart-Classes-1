@@ -1,18 +1,19 @@
 void main (){
-  var abc = sumOfTwoNumbers();
-  print('abc is: $abc');
+  print(result);
+  sumOfTwoNumbers();
+  print(result);
 }
 
 num result = 0;
 
-sumOfTwoNumbers (){ 
+void sumOfTwoNumbers (){ 
   num num1 = 5;
   num num2 = 7;
-  return num1 + num2;
+  result = num1 + num2;
 }
 
 
-// understanding functions student record
+//1: understanding functions student record
 // void main (){
 //   var abc = studentRecords();
 //   print('value of abc is: $abc');
@@ -34,4 +35,19 @@ sumOfTwoNumbers (){
 //     print('$name Fail');
 //     return '$name Fail';
 //   }
+// }
+
+//2: void function you can never use return keyword
+// void main (){
+//   print(result);
+//   sumOfTwoNumbers();
+//   print(result);
+// }
+
+// num result = 0;
+
+// void sumOfTwoNumbers (){ 
+//   num num1 = 5;
+//   num num2 = 7;
+//   result = num1 + num2;
 // }
