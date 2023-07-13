@@ -1,5 +1,5 @@
 void main (){
-  String grade = studentRecords(
+    var result = studentRecords(
     name: 'Ahmed', 
     rollno: 05, 
     english: 70, 
@@ -8,7 +8,7 @@ void main (){
     physics: 72, 
     chemistry: 81
     );
-    print("Grade: $grade");
+    print(result);
 }
 
 
@@ -28,23 +28,23 @@ studentRecords ({
     num obtainMarks = (english + urdu + math + physics + chemistry);
     var percentage = (obtainMarks / totalMarks) * 100;
 
-    if (percentage >= 80){
-      grade = 'A';
-      return grade;
-    } else if (percentage >= 70){
-      grade = 'B';
-      return grade;
-    } else if (percentage >= 60){
-      grade = 'C';
-      return grade;
-    } else if (percentage >= 60){
-      grade = 'D';
-      return grade;
-    } else if (percentage >= 50){
-      grade = 'E';
-      return grade;
-    } else {
-      return 'Fail';
-    }
+    print('Name: $name');
+    print('Percentage: $percentage');
 
+    if (percentage >= 80){
+      grade = 'A+';
+      print('Grade: $grade');
+    } else if (percentage >= 70){
+      grade = 'A';
+      print('Grade: $grade');
+    } else if (percentage >= 60){
+      grade = 'B';
+      print('Grade: $grade');
+    } else if (percentage >= 50){
+      grade = 'C';
+      print('Grade: $grade');
+    } else {
+      print('$name; Fail');
+    }
+    
 }
