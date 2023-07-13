@@ -1,5 +1,5 @@
 void main (){
-  String abc = markSheet(
+  String grade = studentRecords(
     name: 'Ahmed', 
     rollno: 05, 
     english: 70, 
@@ -8,12 +8,12 @@ void main (){
     physics: 72, 
     chemistry: 81
     );
-    print(abc);
+    print("Grade: $grade");
 }
 
 
 
-markSheet ({
+studentRecords ({
   required String name, 
   required num rollno,
   required num english,
