@@ -1,11 +1,13 @@
+import 'dart:io';
+
 void main (){
-  for (int i = 1; i < 5; i++){
-    for (int j = 1; j <= 10; j++){
-      print('$i x $j = ${i*j}');
+  num number = 4;
+  for (int i = 1; i <= number; i++){
+    for(int j = 1; j <= i; j++){
+      stdout.write('*');
     }
-    print('=========');
+    print('');
   }
-  print('End');
 }
 
 // Nested Loop Method to understand
