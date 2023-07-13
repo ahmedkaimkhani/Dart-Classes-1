@@ -73,3 +73,24 @@ studentRecords (String name, num subject1, num subject2, num subject3){
 //   num result = num1 + num2;
 //   return result;
 // }
+
+//4: Marksheet with required parameters function
+// void main (){
+//   studentRecords('Ahmed', 88, 79, 92);
+//   studentRecords('Usman', 77, 58, 94);
+//   studentRecords('Asim', 44, 35, 62);
+// }
+
+// studentRecords (String name, num subject1, num subject2, num subject3){
+//   num totalMarks = 300;
+//   num obtainMarks = (subject1 + subject2 + subject3);
+//   num percentage = (obtainMarks / totalMarks) * 100;
+
+//   if (percentage >= 50){
+//      print('$name Pass Ppercentage $percentage');
+//     // return '$name Pass';
+//   } else {
+//     print('$name Fail Percentage $percentage');
+//     // return '$name Fail';
+//   }
+// }
