@@ -1,9 +1,12 @@
 void main (){
-  studentsData("Ahmed", '05', 'A');
+  numberTable(5);
 }
 
- studentsData (String name, String rollno, String section){
-  print('name $name rollno $rollno section $section');
+ numberTable (num number){
+  for (int i = 1; i <= 10; i++){
+    print("$number x $i = ${number*i}");
+  }
+  print('=======');
  }
 
 
@@ -91,5 +94,32 @@ void main (){
 // }
 
 //  studentsData (String name, String rollno, String section){
+//   print('name $name rollno $rollno section $section');
+//  }
+
+//6: Opitional and Named Function
+// void main (){
+//   studentsData();
+// }
+
+//  studentsData ({String name, String rollno, String section}){
+//   print('name $name rollno $rollno section $section');
+
+// 7: Named and Required Functions, sequence doesn't matter.
+// void main (){
+  // here don't need to write parameters with sequence cause this function is Named, and required.
+//   studentsData(
+//     rollno: '05',
+//     section: 'A',
+//     name: 'Ahmed'
+//   );
+// }
+
+//  studentsData ({
+//   required String name,
+//    required String rollno,
+//     required String section
+//     })
+//     {
 //   print('name $name rollno $rollno section $section');
 //  }
