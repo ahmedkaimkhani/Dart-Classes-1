@@ -37,7 +37,7 @@ studentRecords ({
       print('Grade: $grade');
     } else if (percentage >= 70){
       grade = 'A';
-      print('Grade: $grade');
+      return grade;
     } else if (percentage >= 60){
       grade = 'B';
       print('Grade: $grade');
@@ -47,6 +47,6 @@ studentRecords ({
     } else {
       print('$name; Fail');
     }
-    //return grade;
+    return grade;
     
 }
