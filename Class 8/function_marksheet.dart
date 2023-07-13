@@ -4,9 +4,9 @@ void main (){
     rollno: 05, 
     english: 70, 
     urdu: 63, 
-    math: 7, 
-    physics: 2, 
-    chemistry: 1
+    math: 87, 
+    physics: 72, 
+    chemistry: 81
     );
     print(result);
 }
@@ -34,15 +34,17 @@ studentRecords ({
 
     if (percentage >= 80){
       grade = 'A+';
+      return 'Grade: $grade';
     } else if (percentage >= 70){
       grade = 'A';
+      return 'Grade: $grade';
     } else if (percentage >= 60){
       grade = 'B';
+      return 'Grade: $grade';
     } else if (percentage >= 50){
       grade = 'C';
+      return 'Grade: $grade';
     } else {
-      print('$name; Fail');
-    }
-    return 'Grade: $grade';
-    
+      return 'Result: Fail';
+    }    
 }
