@@ -1,5 +1,8 @@
 void main (){
-  numberTable(5);
+  List<int> number = [2, 5, 7, 13, 7, 15];
+  for (int i in number){
+    numberTable(i);
+  }
 }
 
  numberTable (num number){
@@ -122,4 +125,16 @@ void main (){
 //     })
 //     {
 //   print('name $name rollno $rollno section $section');
+//  }
+
+//8: table Loop with Functions.
+// void main (){
+//   numberTable(5);
+// }
+
+//  numberTable (num number){
+//   for (int i = 1; i <= 10; i++){
+//     print("$number x $i = ${number*i}");
+//   }
+//   print('=======');
 //  }
