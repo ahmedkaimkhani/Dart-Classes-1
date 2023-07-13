@@ -47,6 +47,6 @@ studentRecords ({
     } else {
       print('$name; Fail');
     }
-    return grade;
+    //return grade;
     
 }
