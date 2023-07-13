@@ -1,16 +1,17 @@
 void main (){
-  print(result);
-  sumOfTwoNumbers();
-  print(result);
+  print(sumOfTwoNumbers(2, 5));
+  print(sumOfTwoNumbers(3, 8));
+  print(sumOfTwoNumbers(6, 1));
 }
 
-num result = 0;
-
-void sumOfTwoNumbers (){ 
-  num num1 = 5;
-  num num2 = 7;
-  result = num1 + num2;
+ sumOfTwoNumbers (num num1, num num2){ 
+  num result = num1 + num2;
+  return result;
 }
+
+// There are two type of functions.
+// 1: Void Type: we use void type for reusability and we can't return anything in void type.
+// 2: Return Type: we use return type for passing data somewhere.
 
 
 //1: understanding functions student record
