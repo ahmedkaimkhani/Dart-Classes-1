@@ -1,7 +1,9 @@
 void main (){
   var abc = sumOfTwoNumbers();
-  print('value of abc is: $abc');
+  print('abc is: $abc');
 }
+
+num result = 0;
 
 sumOfTwoNumbers (){ 
   num num1 = 5;
