@@ -44,3 +44,29 @@ void main (){
   // **
   // ***
   // ****
+
+  //4:   num number = 4;
+  // for (int i = 1; i <= number; i++){
+  //   for(int j = 1; j <= i; j++){
+  //     stdout.write(i);
+  //   }
+  //   print('');
+  // }
+  // output:
+  // 1
+  // 22
+  // 333
+  // 4444
+
+    //5:   num number = 4;
+  // for (int i = 1; i <= number; i++){
+  //   for(int j = 1; j <= i; j++){
+  //     stdout.write(j);
+  //   }
+  //   print('');
+  // }
+  // output:
+  // 1
+  // 12
+  // 123
+  // 1234
