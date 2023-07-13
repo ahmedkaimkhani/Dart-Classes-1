@@ -1,22 +1,12 @@
 void main (){
-  studentRecords('Ahmed', 88, 79, 92);
-  studentRecords('Usman', 77, 58, 94);
-  studentRecords('Asim', 44, 35, 62);
+  studentsData("Ahmed", '05', 'A');
 }
 
-studentRecords (String name, num subject1, num subject2, num subject3){
-  num totalMarks = 300;
-  num obtainMarks = (subject1 + subject2 + subject3);
-  num percentage = (obtainMarks / totalMarks) * 100;
+ studentsData (String name, String rollno, String section){
+  print('name $name rollno $rollno section $section');
+ }
 
-  if (percentage >= 50){
-     print('$name Pass Ppercentage $percentage');
-    // return '$name Pass';
-  } else {
-    print('$name Fail Percentage $percentage');
-    // return '$name Fail';
-  }
-}
+
 
 // There are two type of functions.
 // 1: Void Type: we use void type for reusability and we can't return anything in void type.
@@ -62,7 +52,7 @@ studentRecords (String name, num subject1, num subject2, num subject3){
 //   result = num1 + num2;
 // }
 
-//3: required parameters type functions
+//3: Simple required parameters type functions
 // void main (){
 //   print(sumOfTwoNumbers(2, 5));
 //   print(sumOfTwoNumbers(3, 8));
@@ -74,7 +64,7 @@ studentRecords (String name, num subject1, num subject2, num subject3){
 //   return result;
 // }
 
-//4: Marksheet with required parameters function
+//4: Marksheet with simple required parameters function
 // void main (){
 //   studentRecords('Ahmed', 88, 79, 92);
 //   studentRecords('Usman', 77, 58, 94);
@@ -94,3 +84,12 @@ studentRecords (String name, num subject1, num subject2, num subject3){
 //     // return '$name Fail';
 //   }
 // }
+
+//5: Simple required function in this function parameter sequence is must
+// void main (){
+//   studentsData("Ahmed", '05', 'A');
+// }
+
+//  studentsData (String name, String rollno, String section){
+//   print('name $name rollno $rollno section $section');
+//  }
