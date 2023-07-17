@@ -14,4 +14,5 @@ void main (){
 
   var abc2 = students.putIfAbsent(5, () => 'Hamza');
   print(abc2);
+   print(students);
 }
