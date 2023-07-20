@@ -154,3 +154,14 @@ void main (){
 //   }
 //   print('=======');
 //  }
+
+//10: Arrow Function
+// where we are doing single line of logic/work using arrow function it's is return function.
+// void main (){
+  
+//  print(sumOfTwoNumbers(5, 2));
+//  }
+
+//  sumOfTwoNumbers (num1, num2) => num1 + num2;
+
+
