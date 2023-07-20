@@ -1,16 +1,12 @@
 import 'dart:io';
 
 void main (){
-  
-  // hum program ko bata rahy hain yahan value lazmi aaaye ge cause of !,
-  // aser nh aai tw code crash ho jayega.
-  String name = stdin.readLineSync()!;
-
-  // we use ? here, hum program ko bata rahy hain kay value nul bhi aa sakti 
-  // hai yahan ager value aajaye ya null bhi aajyege to code crash nh hoga.
-  String? fbLink = stdin.readLineSync();
 
 }
+
+ studentInfo ({String? name}){
+
+ }
 
   // Null Safty,
 
