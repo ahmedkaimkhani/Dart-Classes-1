@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main (){
-  studentInfo(resumeKoKaamAttaHaiYaNahi: 'Ahmed');
+  studentInfo();
 }
 
  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
@@ -41,4 +41,15 @@ void main (){
 // function
 //  studentInfo ({String? resumeKoKaamAttaHai}){
 //   String? officeKaCo = resumeKoKaamAttaHai;
+//  }
+
+//(3): isme runtime pe error ayega code crash ho jayega q kay humne named & optional function
+// bana kr isme ! sign use kia jisme null value per error aaajyega
+// void main (){
+//   studentInfo();
+// }
+// functions
+//  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
+//   String officeKaCo = resumeKoKaamAttaHaiYaNahi!;
+//   print(officeKaCo);
 //  }
