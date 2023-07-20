@@ -1,11 +1,11 @@
 import 'dart:io';
 
 void main (){
-
+  studentInfo(resumeKoKaamAttaHaiYaNahi: '');
 }
 
- studentInfo ({String? name}){
-
+ studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
+  String? officeKaCo = resumeKoKaamAttaHaiYaNahi;
  }
 
   // Null Safty,
@@ -32,3 +32,12 @@ void main (){
   // String? fbLink = stdin.readLineSync();
   
 // }
+
+//(2): yeh code 
+// void main (){
+//   studentInfo();
+// }
+// function
+//  studentInfo ({String? resumeKoKaamAttaHai}){
+//   String? officeKaCo = resumeKoKaamAttaHai;
+//  }
