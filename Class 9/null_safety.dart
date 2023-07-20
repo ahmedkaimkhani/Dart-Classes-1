@@ -1,6 +1,14 @@
 import 'dart:io';
 
 void main (){
+  
+  // hum program ko bata rahy hain yahan value lazmi aaaye ge cause of !,
+  // aser nh aai tw code crash ho jayega.
+  String name = stdin.readLineSync()!;
+
+  // we use ? here, hum program ko bata rahy hain kay value nul bhi aa sakti 
+  // hai yahan ager value aajaye ya null bhi aajyege to code crash nh hoga.
+  String? fbLink = stdin.readLineSync();
 
 }
 
@@ -16,3 +24,15 @@ void main (){
   //(3) ?? double question mark, yeh almost if else he hai, ?? jis tarha hum if else
   // me check krty hain ager ek variable me value aa rahi tw print krdo ya use krlo
   // otherwise ?? yeh value lelo.
+
+  //(1); void main (){
+  
+  // hum program ko bata rahy hain yahan value lazmi aaaye ge cause of !,
+  // aser nh aai tw code crash ho jayega.
+  // String name = stdin.readLineSync()!;
+
+  // we use ? here, hum program ko bata rahy hain kay value nul bhi aa sakti 
+  // hai yahan ager value aajaye ya null bhi aajyege to code crash nh hoga.
+  // String? fbLink = stdin.readLineSync();
+  
+// }
