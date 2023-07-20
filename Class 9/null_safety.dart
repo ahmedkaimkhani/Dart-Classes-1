@@ -1,11 +1,12 @@
 import 'dart:io';
 
 void main (){
-  studentInfo(resumeKoKaamAttaHaiYaNahi: '');
+  studentInfo(resumeKoKaamAttaHaiYaNahi: 'Ahmed');
 }
 
  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
-  String? officeKaCo = resumeKoKaamAttaHaiYaNahi;
+  String officeKaCo = resumeKoKaamAttaHaiYaNahi!;
+  print(officeKaCo);
  }
 
   // Null Safty,
