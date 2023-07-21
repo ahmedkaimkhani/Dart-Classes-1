@@ -5,7 +5,7 @@ void main (){
 }
 
  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
-  String? officeKaCo = resumeKoKaamAttaHaiYaNahi;
+  String? officeKaCo = resumeKoKaamAttaHaiYaNahi ?? "Ahmed";
   print(officeKaCo);
  }
 
@@ -51,5 +51,27 @@ void main (){
 // functions
 //  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
 //   String officeKaCo = resumeKoKaamAttaHaiYaNahi!;
+//   print(officeKaCo);
+//  }
+
+// (4) isme null ayega lakin run time pe error nh ayega q kay humne named & optioal function
+// me humne ? sign use kia hai jisse wo null bhi accept kryga 
+// void main (){
+//   studentInfo();
+// }
+
+//  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
+//   String? officeKaCo = resumeKoKaamAttaHaiYaNahi;
+//   print(officeKaCo);
+//  }
+
+//(5): isme value "Ahmed" ayegeg q kay humne usy ?? sign de kr condition de de like if else
+// ager variable null or tw usme ?? yeh print krdo, otherwise wahi value print krdo.
+// void main (){
+//   studentInfo();
+// }
+
+//  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
+//   String? officeKaCo = resumeKoKaamAttaHaiYaNahi ?? "Ahmed";
 //   print(officeKaCo);
 //  }
