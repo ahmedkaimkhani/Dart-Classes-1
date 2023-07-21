@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main (){
-  studentInfo();
+  studentInfo(resumeKoKaamAttaHaiYaNahi: 'Usman');
 }
 
  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
@@ -69,6 +69,17 @@ void main (){
 // ager variable null or tw usme ?? yeh print krdo, otherwise wahi value print krdo.
 // void main (){
 //   studentInfo();
+// }
+
+//  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
+//   String? officeKaCo = resumeKoKaamAttaHaiYaNahi ?? "Ahmed";
+//   print(officeKaCo);
+//  }
+
+//(6): isme value "usman" ayegeg or isme humne program ko ?? sign de kr condition de ha like if else
+// ager variable null or tw usme ?? yeh print krdo, otherwise wahi value print krdo.
+// void main (){
+//   studentInfo(resumeKoKaamAttaHaiYaNahi: 'Usman');
 // }
 
 //  studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
