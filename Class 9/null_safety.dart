@@ -1,14 +1,14 @@
-import 'dart:io';
 
 void main (){
-  studentInfo(resumeKoKaamAttaHaiYaNahi: 'Usman');
+  sumOfTwonumbers(name: 'Usman');
 }
 
- studentInfo ({String? resumeKoKaamAttaHaiYaNahi}){
-  String? officeKaCo = resumeKoKaamAttaHaiYaNahi ?? "Ahmed";
-  print(officeKaCo);
- }
+ sumOfTwonumbers ({String? name, String? fbLink}){
+  String? abc = name ?? 'Ahmed';
+  String bca = fbLink ?? 'http:facebook.com';
+  print('${name!+fbLink!}');
 
+ }
   // Null Safty,
 
   //(1) ! exclamation mark, iska matlab jahan bhi ! use krogay woh program ko make sure kryge
