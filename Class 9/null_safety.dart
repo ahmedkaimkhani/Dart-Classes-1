@@ -1,15 +1,9 @@
 
 void main (){
-  int? num1 = null;
-  int? num2 = null;
+  int age = 19;
 
-  int number1 = num1 ?? 4;
-  int number2 = num2 ?? 6;
-
-
-  int result = number1 + number2;
-
-  print('Value of number1 + number2 is: $result');
+  String result = age>18 ? 'Allow' : 'Not Allow';
+  print(result);
 }
 
   // Null Safty,
@@ -176,4 +170,4 @@ void main (){
 
 //   print('Value of number1 + number2 is: $result');
 // }
-// output: Value of Number1 + Number2 is: 10
+// output: Value of Number1 + Number2 is: 16
