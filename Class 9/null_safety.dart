@@ -145,3 +145,35 @@ void main (){
 
 //  }
 // output: Result of Number1 + Number2 is: 26
+
+//(11) practice of ??
+// void main (){
+//   int? num1 = null;
+//   int? num2 = null;
+
+//   int number1 = num1 ?? 4;
+//   int number2 = num2 ?? 6;
+
+
+//   int result = number1 + number2;
+
+//   print('Value of number1 + number2 is: $result');
+// }
+// output: Value of Number1 + Number2 is: 10
+
+//(12) practice of ??
+// it's run perfectly but it's gives you warning that The left operand can't be null,
+// so the right operand is never executed.
+// void main (){
+//   int? num1 = 10;
+//   int? num2 = null;
+
+//   int number1 = num1 ?? 4;
+//   int number2 = num2 ?? 6;
+
+
+//   int result = number1 + number2;
+
+//   print('Value of number1 + number2 is: $result');
+// }
+// output: Value of Number1 + Number2 is: 10
