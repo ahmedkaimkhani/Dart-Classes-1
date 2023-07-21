@@ -101,3 +101,17 @@ void main (){
 
 //  }
 // output: Usman http:facebook.com
+
+//(8) practice of ??
+// void main (){
+//   sumOfTwonumbers();
+// }
+
+//  sumOfTwonumbers ({num? num1, num? num2}){
+//   num number1 = num1 ?? 5;
+//   num number2 = num2 ?? 4;
+//   num result = number1 + number2;
+//   print('Result of Number1 + Number2 is: $result');
+
+//  }
+// output: Result of Number1 + Number2 is: 9
