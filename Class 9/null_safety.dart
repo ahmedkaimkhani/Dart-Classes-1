@@ -1,15 +1,17 @@
 
 void main (){
-  sumOfTwonumbers(num1: 11, num2: 15);
+  int? num1 = null;
+  int? num2 = null;
+
+  int number1 = num1 ?? 4;
+  int number2 = num2 ?? 6;
+
+
+  int result = number1 + number2;
+
+  print('Value of number1 + number2 is: $result');
 }
 
- sumOfTwonumbers ({num? num1, num? num2}){
-  num number1 = num1 ?? 5;
-  num number2 = num2 ?? 4;
-  num result = number1 + number2;
-  print('Result of Number1 + Number2 is: $result');
-
- }
   // Null Safty,
 
   //(1) ! exclamation mark, iska matlab jahan bhi ! use krogay woh program ko make sure kryge
@@ -129,3 +131,17 @@ void main (){
 
 //  }
 // output: Result of Number1 + Number2 is: 15
+
+//(10) practice of ??
+// void main (){
+//   sumOfTwonumbers(num1: 11, num2: 15);
+// }
+
+//  sumOfTwonumbers ({num? num1, num? num2}){
+//   num number1 = num1 ?? 5;
+//   num number2 = num2 ?? 4;
+//   num result = number1 + number2;
+//   print('Result of Number1 + Number2 is: $result');
+
+//  }
+// output: Result of Number1 + Number2 is: 26
