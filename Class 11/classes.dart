@@ -113,3 +113,25 @@ class Student {
 // Name: Ahmed
 // Age: 21
 // Roll No: 100
+
+//(4) null aayega q kay humne value assign nh ki or ? laga kr keh diya value null bhi ho sakti
+// void main() {
+//   Student obj = Student();
+//   obj.projectSubmit(true);
+// }
+
+// class Student {
+//   String? name;
+//   String? age;
+//   String? rollNo;
+//   String sec = 'B';
+
+//   projectSubmit (bool isProjectSubmitted){
+//     if (isProjectSubmitted){
+//       print('$name ne project submit karwa diya');
+//     } else{
+//       print('$name ko class se nikal do');
+//     }
+//   }
+// }
+// Output: null ne project submit karwa diya
