@@ -3,6 +3,10 @@ void main() {
   Student obj = Student();
   obj.name = 'Ahmed';
   obj.projectSubmit(true);
+  print('=======');
+  Student obj1 = Student();
+  obj1.name = 'Usman';
+  obj1.projectSubmit(false);
 }
 
 class Student {
@@ -157,3 +161,33 @@ class Student {
 //   }
 // }
 // Output: Ahmed ne project submit karwa diya
+
+//(6)
+// void main() {
+//   print('=======');
+//   Student obj = Student();
+//   obj.name = 'Ahmed';
+//   obj.projectSubmit(true);
+//   print('=======');
+//   Student obj1 = Student();
+//   obj1.name = 'Usman';
+//   obj1.projectSubmit(false);
+// }
+
+// class Student {
+//   late String name;
+//   String sec = 'B';
+
+//   projectSubmit (bool isProjectSubmitted){
+//     if (isProjectSubmitted){
+//       print('$name ne project submit karwa diya');
+//     } else{
+//       print('$name ko class se nikal do');
+//     }
+//   }
+// }
+// Output:
+// =======
+// Ahmed ne project submit karwa diya
+// =======
+// Usman ko class se nikal do
