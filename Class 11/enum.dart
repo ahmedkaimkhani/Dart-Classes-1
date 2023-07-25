@@ -14,5 +14,6 @@ void main (){
       break;
     default:
     print('Select payment method');
+    break;
   }
 }
