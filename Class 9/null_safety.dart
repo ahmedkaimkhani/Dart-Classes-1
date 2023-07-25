@@ -1,7 +1,7 @@
 
 void main (){
   int age = 19;
-
+  // same as if else
   String result = age>18 ? 'Allow' : 'Not Allow';
   print(result);
 }
@@ -171,3 +171,12 @@ void main (){
 //   print('Value of number1 + number2 is: $result');
 // }
 // output: Value of Number1 + Number2 is: 16
+
+//(13): you can use this method for if else
+// void main (){
+//   int age = 19;
+  // same as if else
+//   String result = age>18 ? 'Allow' : 'Not Allow';
+//   print(result);
+// }
+// output: Allow
