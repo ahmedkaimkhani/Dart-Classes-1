@@ -6,7 +6,7 @@ void main() {
 }
 
 class Student {
-  String? name;
+  late String name;
   String sec = 'B';
 
   projectSubmit (bool isProjectSubmitted){
@@ -136,7 +136,7 @@ class Student {
 // }
 // Output: null ne project submit karwa diya
 
-//(5)
+//(5)we use late keyword make sure if you use late value can't be null otherwise code crash(Error).
 // void main() {
 //   print('=======');
 //   Student obj = Student();
@@ -145,7 +145,7 @@ class Student {
 // }
 
 // class Student {
-//   String? name;
+//   late String name;
 //   String sec = 'B';
 
 //   projectSubmit (bool isProjectSubmitted){
