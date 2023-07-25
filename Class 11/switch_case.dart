@@ -14,5 +14,6 @@ void main (){
       print(num1 - num2);
       break;
     default:
+    print('unsupported operation');
   }
 }
