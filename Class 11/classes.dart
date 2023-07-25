@@ -1,11 +1,12 @@
 void main() {
-
+  Student obj = Student();
+  obj.projectSubmit(true);
 }
 
 class Student {
-  String name = 'Ahmed';
-  String age = '21';
-  String rollNo = '10';
+  String? name;
+  String? age;
+  String? rollNo;
   String sec = 'B';
 
   projectSubmit (bool isProjectSubmitted){
