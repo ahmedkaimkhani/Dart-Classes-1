@@ -4,7 +4,7 @@ void main (){
 
   switch (paymentMethod) {
     case PaymentType.EasyPaisa:
-      print('$paymentMethod is selected for payment method');
+      print('${paymentMethod.toString().split('.').last} is selected for payment method');
       break;
       case PaymentType.HBL:
       print('$paymentMethod is selected for payment method');
