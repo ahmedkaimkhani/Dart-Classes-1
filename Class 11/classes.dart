@@ -1,12 +1,12 @@
 void main() {
+  print('=======');
   Student obj = Student();
+  obj.name = 'Ahmed';
   obj.projectSubmit(true);
 }
 
 class Student {
   String? name;
-  String? age;
-  String? rollNo;
   String sec = 'B';
 
   projectSubmit (bool isProjectSubmitted){
@@ -135,3 +135,25 @@ class Student {
 //   }
 // }
 // Output: null ne project submit karwa diya
+
+//(5)
+// void main() {
+//   print('=======');
+//   Student obj = Student();
+//   obj.name = 'Ahmed';
+//   obj.projectSubmit(true);
+// }
+
+// class Student {
+//   String? name;
+//   String sec = 'B';
+
+//   projectSubmit (bool isProjectSubmitted){
+//     if (isProjectSubmitted){
+//       print('$name ne project submit karwa diya');
+//     } else{
+//       print('$name ko class se nikal do');
+//     }
+//   }
+// }
+// Output: Ahmed ne project submit karwa diya
