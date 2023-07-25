@@ -7,7 +7,12 @@ void main (){
       print('$paymentMethod is select for payment method');
       break;
       case PaymentType.HBL:
+      print('$paymentMethod is select for payment method');
+      break;
+      case PaymentType.CashOnDelivery:
+      print('$paymentMethod is select for payment method');
       break;
     default:
+    print('Select payment method');
   }
 }
