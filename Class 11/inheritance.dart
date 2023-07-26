@@ -9,9 +9,13 @@ class Animal {
 }
 
 class Dog {
-
+  void bark (){
+    print('Dog is barking');
+  }
 }
 
 class Cat {
-
+  void meow (){
+    print('Cat is meowing');
+  }
 }
