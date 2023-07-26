@@ -2,6 +2,8 @@ void main (){
   Dog dog = Dog();
   dog.name = 'Bazil';
   dog.age = 19;
+  print('Dog name is ${dog.name} and age is ${dog.age}');
+  dog.bark();
 }
 
 // get access properties of a class in multiple classes 
