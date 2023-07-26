@@ -8,13 +8,13 @@ class Animal {
   int? age;
 }
 
-class Dog {
+class Dog extends Animal{
   void bark (){
     print('Dog is barking');
   }
 }
 
-class Cat {
+class Cat extends Animal{
   void meow (){
     print('Cat is meowing');
   }
