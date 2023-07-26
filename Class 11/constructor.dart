@@ -4,6 +4,11 @@ void main() {
 
   Student object2 = Student(2, 'Usman');
   print('Roll No ${object2.rollNumber} and Name ${object2.name}');
+
+  Student object3 = Student.myNamedConstructor();
+  object3.rollNumber = 3;
+  object3.name = 'Bazil';
+  print('Roll No ${object3.rollNumber} and Name ${object3.name}');
 }
 
 class Student {
