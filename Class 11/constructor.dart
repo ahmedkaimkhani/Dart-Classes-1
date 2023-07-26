@@ -7,13 +7,18 @@ void main() {
 
   Student object3 = Student.myNamedConstructor(3, 'Bazil');
   print('Roll No ${object3.rollNumber} and Name ${object3.name}');
+
+  Student object4 = Student.myDefaultConstructor(4, 'Asim');
+  print('Roll No ${object4.rollNumber} and Name ${object4.name}');
 }
 
 class Student {
   int? rollNumber; // instance or field variable
   String? name;
 
-  Student.myNamedConstructor(this.rollNumber, this.name);
+  Student.myDefaultConstructor (this.rollNumber, this.name); // you can use default constructor with parameter and without parameter.
+
+  Student.myNamedConstructor(this.rollNumber, this.name); // you can also use parameter to given value in named constructor
 
   Student(this.rollNumber, this.name);
 }
@@ -129,3 +134,29 @@ class Student {
 // Roll No 1 and Name Ahmed
 // Roll No 2 and Name Usman
 // Roll No 3 and Name Bazil
+
+//(2)
+// void main() {
+//   Student object1 = Student(1, 'Ahmed'); // instance or object
+//   print('Roll No ${object1.rollNumber} and Name ${object1.name}');
+
+//   Student object2 = Student(2, 'Usman');
+//   print('Roll No ${object2.rollNumber} and Name ${object2.name}');
+
+//   Student object3 = Student.myNamedConstructor(3, 'Bazil');
+//   print('Roll No ${object3.rollNumber} and Name ${object3.name}');
+// }
+
+// class Student {
+//   int? rollNumber; // instance or field variable
+//   String? name;
+
+//   Student.myNamedConstructor(this.rollNumber, this.name); // you can also use parameter to given value in named constructor
+
+//   Student(this.rollNumber, this.name);
+// }
+// output:
+// Roll No 1 and Name Ahmed
+// Roll No 2 and Name Usman
+// Roll No 3 and Name Bazil
+
