@@ -1,5 +1,7 @@
 void main (){
-
+  Dog dog = Dog();
+  dog.name = 'Bazil';
+  dog.age = 19;
 }
 
 // get access properties of a class in multiple classes 
