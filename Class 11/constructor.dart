@@ -10,16 +10,7 @@ class Student {
   int? rollNumber; // instance or field variable
   String? name;
 
-  // Student (){
-  //   print('I am constructor');
-  // }
-  // you can't use 2 more than 1 constructor in class , you can't use another
-  // constructor with defult constructor.
-  Student(int rollNo, String name) {
-    rollNumber = rollNo;
-    this.name = name; // ager ap parameter or instance/object(properties) ka name same
-    // rakhainge to apko lazmi this. use krna prega this.name = name; otherwise value null ayege.
-  }
+  Student(this.rollNumber, this.name);
 }
 
 // constructor is method. constructor name is same as class name
@@ -57,7 +48,7 @@ class Student {
 // Roll No 2 and Name Usman
 
 // Parameterized Constructor
-// (2)
+// (1)
 // void main() {
 //   Student object1 = Student(1, 'Ahmed'); // instance or object
 //   print('Roll No ${object1.rollNumber} and Name ${object1.name}');
@@ -78,8 +69,30 @@ class Student {
   // Student(int rollNo, String name) {
 
   //   rollNumber = rollNo;
-    // this.name = name; // ager ap parameter or instance/object(properties) ka name same
+    // this.name = name;     // ager ap parameter or instance/object(properties) ka name same
     // rakhainge to apko lazmi this. use krna prega this.name = name; otherwise value null ayege.
-    
+
 //   }
 // }
+// Output:
+// Roll No 1 and Name Ahmed
+// Roll No 2 and Name Usman
+
+//(2)
+// void main() {
+//   Student object1 = Student(1, 'Ahmed'); // instance or object
+//   print('Roll No ${object1.rollNumber} and Name ${object1.name}');
+
+//   Student object2 = Student(2, 'Usman');
+//   print('Roll No ${object2.rollNumber} and Name ${object2.name}');
+// }
+
+// class Student {
+//   int? rollNumber; // instance or field variable
+//   String? name;
+//   you can use parameter like this it's short method output is same
+//   Student(this.rollNumber, this.name);
+// }
+// Output:
+// Roll No 1 and Name Ahmed
+// Roll No 2 and Name Usman
