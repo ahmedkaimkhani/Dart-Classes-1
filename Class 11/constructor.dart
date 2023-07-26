@@ -5,9 +5,7 @@ void main() {
   Student object2 = Student(2, 'Usman');
   print('Roll No ${object2.rollNumber} and Name ${object2.name}');
 
-  Student object3 = Student.myNamedConstructor();
-  object3.rollNumber = 3;
-  object3.name = 'Bazil';
+  Student object3 = Student.myNamedConstructor(3, 'Bazil');
   print('Roll No ${object3.rollNumber} and Name ${object3.name}');
 }
 
@@ -15,7 +13,7 @@ class Student {
   int? rollNumber; // instance or field variable
   String? name;
 
-  Student.myNamedConstructor();
+  Student.myNamedConstructor(this.rollNumber, this.name);
 
   Student(this.rollNumber, this.name);
 }
@@ -103,3 +101,31 @@ class Student {
 // Output:
 // Roll No 1 and Name Ahmed
 // Roll No 2 and Name Usman
+
+// Named Constructor
+//(1)
+// void main() {
+//   Student object1 = Student(1, 'Ahmed'); // instance or object
+//   print('Roll No ${object1.rollNumber} and Name ${object1.name}');
+
+//   Student object2 = Student(2, 'Usman');
+//   print('Roll No ${object2.rollNumber} and Name ${object2.name}');
+
+//   Student object3 = Student.myNamedConstructor();
+//   object3.rollNumber = 3;
+//   object3.name = 'Bazil';
+//   print('Roll No ${object3.rollNumber} and Name ${object3.name}');
+// }
+
+// class Student {
+//   int? rollNumber; // instance or field variable
+//   String? name;
+
+//   Student.myNamedConstructor();
+
+//   Student(this.rollNumber, this.name);
+// }
+// output:
+// Roll No 1 and Name Ahmed
+// Roll No 2 and Name Usman
+// Roll No 3 and Name Bazil
