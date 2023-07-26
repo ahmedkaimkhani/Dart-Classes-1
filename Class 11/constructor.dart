@@ -10,6 +10,8 @@ class Student {
   int? rollNumber; // instance or field variable
   String? name;
 
+  Student.myNamedConstructor();
+
   Student(this.rollNumber, this.name);
 }
 
