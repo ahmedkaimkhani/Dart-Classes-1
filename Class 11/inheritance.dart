@@ -50,3 +50,6 @@ class Cat extends Animal{
 //     print('Cat is meowing');
 //   }
 // }
+
+// There are three type of inheritance.
+// 1: Single Inheritance, 2: Multi-Level Inheritance and 3: Hierarchical Inheritance.
