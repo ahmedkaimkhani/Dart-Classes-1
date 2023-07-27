@@ -1,6 +1,8 @@
 // Note: Abstract class ka kabhi object nh ban sakta.
 void main (){
-
+  Rectangle rect = Rectangle();
+  rect.draw();
+  
 }
 
 abstract class Shape {
