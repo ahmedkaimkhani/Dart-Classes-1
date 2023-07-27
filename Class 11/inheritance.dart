@@ -4,7 +4,7 @@ void main (){
   flutter obj = flutter();
   obj.name = 'Ahmed';
   obj.rollNo = 110;
-  print('Name: ${obj.name}\n${obj.rollNo}');
+  print('Name: ${obj.name}\nRoll Number: ${obj.rollNo}');
   obj.batch();
 }
 
