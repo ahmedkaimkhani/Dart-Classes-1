@@ -11,3 +11,9 @@ class Rectangle extends Shape {
     print('Draw Shape of Rectangle');
   }
 }
+
+class Square extends Shape {
+  void draw (){
+    print('Draw Shape of Square');
+  }
+}
