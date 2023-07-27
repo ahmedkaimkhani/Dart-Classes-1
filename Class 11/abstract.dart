@@ -2,6 +2,8 @@
 void main (){
   Rectangle rect = Rectangle();
   rect.draw();
+  Square sqr = Square();
+  sqr.draw();
   
 }
 
