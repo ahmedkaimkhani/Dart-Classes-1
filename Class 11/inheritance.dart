@@ -2,6 +2,10 @@
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
   flutter obj = flutter();
+  obj.name = 'Ahmed';
+  obj.rollNo = 110;
+  print('Name: ${obj.name}/n${obj.rollNo}');
+  obj.batch();
 }
 
 class Student {
