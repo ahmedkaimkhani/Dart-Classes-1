@@ -1,28 +1,20 @@
+// There are three type of inheritance.
+// 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
-  Dog dog = Dog();
-  dog.name = 'Bazil';
-  dog.age = 19;
-  print('Dog name is ${dog.name} and age is ${dog.age}');
-  dog.bark();
+  
 }
 
-// get access properties of a class in multiple classes 
-class Animal {
-  String? name;
-  int? age;
+class Student {
+  late int rollNo;
+  late String name;
 }
 
-class Dog extends Animal{
-  void bark (){
-    print('Dog is barking');
+class flutter {
+  batch (){
+    print('SMIT Batch: 7 to 9');
   }
 }
 
-class Cat extends Animal{
-  void meow (){
-    print('Cat is meowing');
-  }
-}
 
 // Inheritance
 // void main (){
@@ -52,4 +44,4 @@ class Cat extends Animal{
 // }
 
 // There are three type of inheritance.
-// 1: Single Inheritance, 2: Multi-Level Inheritance and 3: Hierarchical Inheritance.
+// 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
