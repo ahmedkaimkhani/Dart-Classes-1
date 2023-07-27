@@ -1,3 +1,4 @@
+// Note: Abstract class ka kabhi object nh ban sakta.
 void main (){
 
 }
