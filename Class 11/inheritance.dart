@@ -1,7 +1,7 @@
 // There are three type of inheritance.
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
-  
+  flutter obj = flutter();
 }
 
 class Student {
@@ -9,7 +9,7 @@ class Student {
   late String name;
 }
 
-class flutter {
+class flutter extends Student {
   batch (){
     print('SMIT Batch: 7 to 9');
   }
