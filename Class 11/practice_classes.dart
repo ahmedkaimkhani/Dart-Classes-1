@@ -3,6 +3,7 @@ import 'dart:io';
 void main (){
   stdout.write('Enter English Marks: ');
   int englishMarks = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter English Marks: ');
   int urduMarks = int.parse(stdin.readLineSync()!);
   int mathMarks = int.parse(stdin.readLineSync()!);
   int physicsMarks = int.parse(stdin.readLineSync()!);
