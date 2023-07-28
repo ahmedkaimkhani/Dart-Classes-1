@@ -35,6 +35,10 @@ class Student {
       print('Your Grade is B');
     } else if (percentage >= 60 && percentage < 70){
       print('Your Grade is C');
+    } else if (percentage >= 50 && percentage < 60){
+      print('Your Grade is D');
+    } else {
+      print('You are Failed');
     }
     print(percentage);
     
