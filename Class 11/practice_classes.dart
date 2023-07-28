@@ -5,6 +5,7 @@ void main (){
   int englishMarks = int.parse(stdin.readLineSync()!);
   stdout.write('Enter English Marks: ');
   int urduMarks = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter English Marks: ');
   int mathMarks = int.parse(stdin.readLineSync()!);
   int physicsMarks = int.parse(stdin.readLineSync()!);
   int chemistryMarks = int.parse(stdin.readLineSync()!);
