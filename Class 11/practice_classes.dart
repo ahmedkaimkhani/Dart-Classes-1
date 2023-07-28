@@ -29,6 +29,13 @@ class Student {
     int totalMarks = 500;
     int obtainMarks = english + urdu + math + physics + chemistry;
     double percentage = (obtainMarks / totalMarks * 100);
+    if (percentage >= 80){
+      print('Your Grade is A');
+    } else if (percentage >= 70 && percentage < 80){
+      print('Your Grade is B');
+    } else if (percentage >= 60 && percentage < 70){
+      print('Your Grade is C');
+    }
     print(percentage);
     
   }
