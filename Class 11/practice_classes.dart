@@ -1,5 +1,29 @@
+import 'dart:io';
+
 void main (){
-  
+  int englishMarks = int.parse(stdin.readLineSync()!);
+  int urduMarks = int.parse(stdin.readLineSync()!);
+  int mathMarks = int.parse(stdin.readLineSync()!);
+  int physicsMarks = int.parse(stdin.readLineSync()!);
+  int chemistryMarks = int.parse(stdin.readLineSync()!);
+
+  Student result = Student(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
+
+}
+
+class Student {
+  late int english;
+  late int urdu;
+  late int math;
+  late int physics;
+  late int chemistry;
+
+  Student(this.english, this.urdu, this.math, this.physics, this.chemistry){
+    int totalMarks = 500;
+    int obtainMarks = english + urdu + math + physics + chemistry;
+    double percentage = (obtainMarks / totalMarks * 100);
+    
+  }
 }
 
 // (1)
