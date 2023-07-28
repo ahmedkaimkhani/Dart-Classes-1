@@ -7,7 +7,9 @@ void main (){
   int physicsMarks = int.parse(stdin.readLineSync()!);
   int chemistryMarks = int.parse(stdin.readLineSync()!);
 
-  Student result = Student(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
+  Student result = Student.Marksheet(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
+  
+  
 
 }
 
@@ -18,10 +20,11 @@ class Student {
   late int physics;
   late int chemistry;
 
-  Student(this.english, this.urdu, this.math, this.physics, this.chemistry){
+  Student.Marksheet(this.english, this.urdu, this.math, this.physics, this.chemistry){
     int totalMarks = 500;
     int obtainMarks = english + urdu + math + physics + chemistry;
     double percentage = (obtainMarks / totalMarks * 100);
+    print(percentage);
     
   }
 }
