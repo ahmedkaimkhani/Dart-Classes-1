@@ -40,7 +40,7 @@ class Student {
     } else {
       print('You are Failed');
     }
-    print(percentage);
+    print('Your Percentage is: $percentage');
     
   }
 }
