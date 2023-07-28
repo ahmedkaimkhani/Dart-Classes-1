@@ -3,13 +3,13 @@ import 'dart:io';
 void main (){
   stdout.write('Enter English Marks: ');
   int englishMarks = int.parse(stdin.readLineSync()!);
-  stdout.write('Enter English Marks: ');
+  stdout.write('Enter Urdu Marks: ');
   int urduMarks = int.parse(stdin.readLineSync()!);
-  stdout.write('Enter English Marks: ');
+  stdout.write('Enter Math Marks: ');
   int mathMarks = int.parse(stdin.readLineSync()!);
-  stdout.write('Enter English Marks: ');
+  stdout.write('EnterPhysics Marks: ');
   int physicsMarks = int.parse(stdin.readLineSync()!);
-  stdout.write('Enter English Marks: ');
+  stdout.write('Enter Chemistry Marks: ');
   int chemistryMarks = int.parse(stdin.readLineSync()!);
 
   Student result = Student.Marksheet(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
