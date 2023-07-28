@@ -11,6 +11,7 @@ void main (){
   int physicsMarks = int.parse(stdin.readLineSync()!);
   stdout.write('Enter Chemistry Marks: ');
   int chemistryMarks = int.parse(stdin.readLineSync()!);
+  print('');
 
   Student result = Student.Marksheet(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
   
