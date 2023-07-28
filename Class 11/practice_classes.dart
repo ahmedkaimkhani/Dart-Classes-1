@@ -9,6 +9,7 @@ void main (){
   int mathMarks = int.parse(stdin.readLineSync()!);
   stdout.write('Enter English Marks: ');
   int physicsMarks = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter English Marks: ');
   int chemistryMarks = int.parse(stdin.readLineSync()!);
 
   Student result = Student.Marksheet(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
