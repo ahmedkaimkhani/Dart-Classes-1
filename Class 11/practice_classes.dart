@@ -1,6 +1,8 @@
 import 'dart:io';
 
 void main (){
+  // Marksheet using Oops
+  // take userinput for each subject
   stdout.write('Enter English Marks: ');
   int englishMarks = int.parse(stdin.readLineSync()!);
   stdout.write('Enter Urdu Marks: ');
@@ -13,12 +15,11 @@ void main (){
   int chemistryMarks = int.parse(stdin.readLineSync()!);
   print('');
 
+ // create object/attributes of class required constructor.
   Student result = Student.Marksheet(englishMarks, urduMarks, mathMarks, physicsMarks, chemistryMarks);
-  
-  
-
 }
 
+// create class 
 class Student {
   late int english;
   late int urdu;
@@ -26,10 +27,13 @@ class Student {
   late int physics;
   late int chemistry;
 
+  // create required constructor 
   Student.Marksheet(this.english, this.urdu, this.math, this.physics, this.chemistry){
-    int totalMarks = 500;
+    // create method for percentage
+    int totalMarks = 500; 
     int obtainMarks = english + urdu + math + physics + chemistry;
     double percentage = (obtainMarks / totalMarks * 100);
+    // using nested if else for grades
     if (percentage >= 80){
       print('Your Grade is A');
     } else if (percentage >= 70 && percentage < 80){
