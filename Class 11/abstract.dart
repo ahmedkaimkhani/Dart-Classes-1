@@ -5,7 +5,6 @@ void main (){
   rect.draw();
   Square sqr = Square();
   sqr.draw();
-  
 }
 
 abstract class Shape {
