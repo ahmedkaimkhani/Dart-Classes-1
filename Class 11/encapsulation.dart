@@ -1,6 +1,9 @@
 // 2: Encapsulation
 void main (){
-
+  Camera camera = Camera();
+  camera._id = 10;
+  camera._name = 'Ahmed';
+  camera._price = 2500;
 }
 
 class Camera {
