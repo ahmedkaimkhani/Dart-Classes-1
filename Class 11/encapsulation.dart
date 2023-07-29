@@ -2,8 +2,7 @@
 void main (){
   Student obj = Student();
   obj._name = 'Ahmed';
-  obj._age = -21;
-  print(obj.getAge);
+ obj.setAge(21);
   print(obj._name);
 }
 
@@ -32,10 +31,8 @@ class Student {
     // you can also use condition if else
     if (age < 0){
       this._age = 0;
-      print(age);
     } else {
     this._age = age;
-    print(age);
     }
   }
 }
