@@ -1,4 +1,5 @@
 // Note: Abstract class ka kabhi object nh ban sakta.
+// 1: Abstraction
 void main (){
   Rectangle rect = Rectangle();
   rect.draw();
