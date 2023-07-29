@@ -13,7 +13,12 @@ class Student {
   }
 
   // Getter to get age
-  int setAge (){
+  int getAge (){
     return this._age;
+  }
+
+  // Setter to set name 
+  void setName (String name){
+    this._name = name;
   }
 }
