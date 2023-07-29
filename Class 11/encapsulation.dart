@@ -21,4 +21,9 @@ class Student {
   void setName (String name){
     this._name = name;
   }
+
+  // Setter to set age 
+  void setAge (int age){
+    this._age = age;
+  }
 }
