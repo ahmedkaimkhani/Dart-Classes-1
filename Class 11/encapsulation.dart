@@ -1,5 +1,8 @@
+// 2: Encapsulation
 void main (){
-
+  Student obj = Student();
+  obj._name = 'Ahmed';
+  obj._age = 21;
 }
 
 class Student {
