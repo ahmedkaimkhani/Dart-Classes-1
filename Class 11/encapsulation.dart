@@ -29,6 +29,11 @@ class Student {
 
   // Setter to set age 
   void setAge (int age){
+    // you can also use condition if else
+    if (age < 0){
+      this._age = 0;
+    } else {
     this._age = age;
+    }
   }
 }
