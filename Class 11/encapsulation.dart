@@ -2,9 +2,9 @@
 void main (){
   Student obj = Student();
   obj._name = 'Ahmed';
-  obj._age = 21;
+  obj._age = -21;
+  print(obj.getAge);
   print(obj._name);
-  print(obj._age);
 }
 
 class Student {
