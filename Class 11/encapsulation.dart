@@ -3,9 +3,10 @@ void main (){
   Camera camera = Camera();
   camera.id = 10;
   camera.name = 'Ahmed';
-  camera.price = 2500;
+  camera.price = -2500;
   print(camera.id);
   print(camera.name);
+  print(camera.price);
 }
 
 class Camera {
@@ -23,7 +24,8 @@ class Camera {
   set name (String name) => this._name = name;
   set price (double price) {
     if (price < 0){
-      throw Exception('Price must not be negative');
+      print('Price must not be negative');
+      // throw Exception('Price must not be negative');
     } else {
       this._price = price;
     }
