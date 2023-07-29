@@ -1,9 +1,11 @@
 // 2: Encapsulation
 void main (){
   Camera camera = Camera();
-  camera._id = 10;
-  camera._name = 'Ahmed';
-  camera._price = 2500;
+  camera.id = 10;
+  camera.name = 'Ahmed';
+  camera.price = 2500;
+  print(camera.id);
+  print(camera.name);
 }
 
 class Camera {
@@ -19,7 +21,13 @@ class Camera {
   // Setter
   set id (int id) => this._id = id;
   set name (String name) => this._name = name;
-  set price (double price) => this._price = price;
+  set price (double price) {
+    if (price < 0){
+      throw Exception('Price must not be negative');
+    } else {
+      this._price = price;
+    }
+  }
 }
 
 // 2: Encapsulation
