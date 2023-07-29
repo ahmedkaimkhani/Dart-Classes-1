@@ -12,6 +12,11 @@ class Camera {
   int get id => _id!;
   String get name => _name!;
   double get price => _price!;
+
+  // Setter
+  set id (int id) => this._id;
+  set name (String name) => this._name;
+  set price (double price) => this._price;
 }
 
 // 2: Encapsulation
