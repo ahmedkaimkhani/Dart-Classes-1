@@ -14,9 +14,9 @@ class Camera {
   double get price => _price!;
 
   // Setter
-  set id (int id) => this._id;
-  set name (String name) => this._name;
-  set price (double price) => this._price;
+  set id (int id) => this._id = id;
+  set name (String name) => this._name = name;
+  set price (double price) => this._price = price;
 }
 
 // 2: Encapsulation
