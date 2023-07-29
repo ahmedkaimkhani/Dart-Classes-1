@@ -32,8 +32,10 @@ class Student {
     // you can also use condition if else
     if (age < 0){
       this._age = 0;
+      print(age);
     } else {
     this._age = age;
+    print(age);
     }
   }
 }
