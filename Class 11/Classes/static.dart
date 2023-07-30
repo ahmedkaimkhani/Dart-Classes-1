@@ -57,3 +57,28 @@ class Circle {
 // Output:
 // 3.5
 // Static method Practice
+
+//(3)
+// void main (){
+//   Circle circle = Circle();
+//   circle.myNormalFUnction();
+// }
+
+// //create class
+// class Circle {
+//   static double pi = 3.14;
+
+//   // you can't call other method/function in static method
+//   // but you can call static method in Normal Function.
+//   static void calculateArea (){
+//     // myNormalFUnction();
+//     print('Static method Practice');
+//   }
+//   myNormalFUnction (){
+//     calculateArea();
+//     print('My Normal Function');
+//   }
+// }
+// Output: 
+// Static method Practice
+// My Normal Function
