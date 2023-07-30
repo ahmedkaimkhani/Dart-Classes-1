@@ -3,7 +3,7 @@ void main (){
   Camera camera = Camera();
   camera.id = 10;
   camera.name = 'Ahmed';
-  camera.price = -1;
+  camera.price = -2500;
   print(camera.id);
   print(camera.name);
   print(camera.price);
