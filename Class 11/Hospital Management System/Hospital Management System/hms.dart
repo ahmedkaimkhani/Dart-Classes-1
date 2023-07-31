@@ -2,12 +2,13 @@ import 'dart:io';
 
 List<Map<String, dynamic>> patientList = [];
 void main (){
+  PageOne pageOne = PageOne();
 }
 
 // main screen funcction
 class PageOne {
-  int option;
-PageOne(this.option) {
+  // main screen funcction
+PageOne() {
   bool condition = true;
 
   while (condition == true) {
@@ -25,7 +26,7 @@ PageOne(this.option) {
 
     print('');
     stdout.write('Enter you option: ');
-    option = int.parse(stdin.readLineSync()!);
+    int option = int.parse(stdin.readLineSync()!);
     print('');
     // condition = false;
     // press functions
@@ -34,15 +35,15 @@ PageOne(this.option) {
     } else if (option == 2) {
       
     } else if (option == 3) {
-     
+      
     } else if (option == 4) {
-    
+      
     } else if (option == 5) {
-     
+      
     } else if (option == 6) {
      
     } else if (option == 7) {
-     
+      
     } else if (option == 8) {
       condition = false;
       print('Exited');
@@ -50,3 +51,54 @@ PageOne(this.option) {
   }
 }
 }
+
+class AddPatient {
+  // Add Patients Function
+AddPatient() {
+  stdout.write('Enter your Id: ');
+  int id = int.parse(stdin.readLineSync()!);
+
+  if (PatientExist(patientList).isPatientExist(id)) {
+    print('Patient with Id $id\nAlready exist please Enter Unique Id');
+    return;
+  }
+
+  stdout.write('Enter your Name: ');
+  String name = (stdin.readLineSync()!);
+  stdout.write('Enter your Age: ');
+  int age = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter your Phone No: ');
+  int phoneNo = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter your Gender: ');
+  String gender = (stdin.readLineSync()!);
+  stdout.write('Enter your Address: ');
+  String address = (stdin.readLineSync()!);
+  print("");
+
+  Map<String, dynamic> newPatient = {
+    'id': id,
+    'name': name,
+    'age': age,
+    'phoneNo': phoneNo,
+    'gender': gender,
+    'address': address,
+    'appoinmentSchedule': []
+  };
+  patientList.add(newPatient);
+  print('~~ Patient Add Successfully ~~');
+}
+}
+
+class PatientExist {
+  List<Map<String, dynamic>> patientList;
+
+  PatientExist(this.patientList);
+
+  bool isPatientExist(int id) {
+    return patientList.any((element) => element['id'] == id);
+  }
+}
+
+
+
+
