@@ -144,6 +144,34 @@ DeletePatient() {
 }
 }
 
+class SearchPatient {
+  // Search Function
+SearchPatients() {
+  print('***=== Search Patient ===***');
+  print('');
+  if (patientList.isEmpty) {
+    print('No Paitent Record For Search');
+  } else {
+    stdout.write('Enter Id: ');
+    int idInput = int.parse(stdin.readLineSync()!);
+    print('');
+
+    for (int i = 0; i < patientList.length; i++) {
+      Map<String, dynamic> searchPatient = patientList[i];
+      if (searchPatient['id'] == idInput) {
+        print('Name: ${searchPatient['name']}');
+        print('Age: ${searchPatient['age']}');
+        print('PhoneNo: ${searchPatient['phoneNo']}');
+        print('Gender: ${searchPatient['gender']}');
+        print('Address: ${searchPatient['address']}');
+      } else {
+        print('Invalid Patient Id');
+      }
+    }
+  }
+}
+}
+
 
 
 
