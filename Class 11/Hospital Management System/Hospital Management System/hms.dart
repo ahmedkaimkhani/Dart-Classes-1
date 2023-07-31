@@ -173,6 +173,55 @@ SearchPatients() {
 }
 }
 
+class AppoinmentsSchedule {
+  // Add patient Appoinments Schedule
+AppoinmentsSchedule() {
+  if (patientList.isEmpty) {
+    print('No Patient Available for Schedule');
+  } else {
+    stdout.write('Enter you Id: ');
+    int appoinmentId = int.parse(stdin.readLineSync()!);
+    stdout.write('Enter you Name: ');
+    String appointmentName = (stdin.readLineSync()!);
+
+    bool foundPatient = false;
+
+    for (int i = 0; i < patientList.length; i++) {
+      Map<String, dynamic> addAppointment = patientList[i];
+      if (addAppointment['id'] == appoinmentId &&
+          addAppointment['name'] == appointmentName) {
+        stdout.write('Enter Dr Name: ');
+        String drName = (stdin.readLineSync()!);
+
+        stdout.write("Enter Appointment Day: ");
+        String appointmentDay = stdin.readLineSync()!;
+
+        stdout.write("Enter Appointment Time: ");
+        var appointmentTime = stdin.readLineSync()!;
+
+        stdout.write("Enter Appointment Date: ");
+        var appointmentDate = stdin.readLineSync()!;
+
+        Map<String, dynamic> appoinments = {
+          'Dr Name': drName,
+          'Appoinment Day': appointmentDay,
+          'Appoinment Date': appointmentDate,
+          'Appoinment Time': appointmentTime
+        };
+        addAppointment['appoinmentSchedule'].add(appoinments);
+        foundPatient = true;
+        print('');
+      }
+    }
+    if (foundPatient == false) {
+      print('Invaild Id or Name!');
+    } else {
+      print('Add Appoinment Schedule Successfully');
+    }
+  }
+}
+}
+
 
 
 
