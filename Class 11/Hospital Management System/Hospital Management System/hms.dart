@@ -32,7 +32,7 @@ PageOne() {
     // condition = false;
     // press functions
     if (option == 1) {
-     
+     AddPatient();
     } else if (option == 2) {
       
     } else if (option == 3) {
