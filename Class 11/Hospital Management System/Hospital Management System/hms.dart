@@ -2,12 +2,12 @@ import 'dart:io';
 
 List<Map<String, dynamic>> patientList = [];
 void main (){
-  
+  PageOne screenOne = PageOne();
 }
 
 class PageOne {
   // main screen funcction
-pageOne() {
+PageOne() {
   bool condition = true;
 
   while (condition == true) {
