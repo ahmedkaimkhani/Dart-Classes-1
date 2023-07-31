@@ -4,6 +4,7 @@ List<Map<String, dynamic>> patientList = [];
 void main (){
   PageOne pageOne = PageOne();
   AddPatient addPatient = AddPatient();
+  ViewPatientRecords viewPatientRecords = ViewPatientRecords();
 }
 
 // main screen funcction
