@@ -40,7 +40,7 @@ PageOne() {
     } else if (option == 3) {
       DeletePatient();
     } else if (option == 4) {
-      
+      SearchPatient();
     } else if (option == 5) {
       
     } else if (option == 6) {
