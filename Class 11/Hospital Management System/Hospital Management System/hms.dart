@@ -5,6 +5,7 @@ void main (){
   PageOne pageOne = PageOne();
   AddPatient addPatient = AddPatient();
   ViewPatientRecords viewPatientRecords = ViewPatientRecords();
+  DeletePatient deletePatient = DeletePatient();
 }
 
 // main screen funcction
