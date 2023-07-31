@@ -2,12 +2,12 @@ import 'dart:io';
 
 List<Map<String, dynamic>> patientList = [];
 void main (){
-  PageOne screenOne = PageOne();
 }
 
+// main screen funcction
 class PageOne {
-  // main screen funcction
-PageOne() {
+  int option;
+PageOne(this.option) {
   bool condition = true;
 
   while (condition == true) {
@@ -25,7 +25,7 @@ PageOne() {
 
     print('');
     stdout.write('Enter you option: ');
-    int option = int.parse(stdin.readLineSync()!);
+    option = int.parse(stdin.readLineSync()!);
     print('');
     // condition = false;
     // press functions
