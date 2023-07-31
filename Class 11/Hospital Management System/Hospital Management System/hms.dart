@@ -3,6 +3,7 @@ import 'dart:io';
 List<Map<String, dynamic>> patientList = [];
 void main (){
   PageOne pageOne = PageOne();
+  AddPatient addPatient = AddPatient();
 }
 
 // main screen funcction
