@@ -43,7 +43,7 @@ PageOne() {
     } else if (option == 4) {
       SearchPatient();
     } else if (option == 5) {
-      
+      AppoinmentsSchedule();
     } else if (option == 6) {
      
     } else if (option == 7) {
