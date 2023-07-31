@@ -121,6 +121,28 @@ ViewPatientRecords() {
 }
 }
 
+class DeletePatient {
+  // Delete Patients
+DeletePatient() {
+  print('***=== Delete Patient ===***');
+  print('');
+  if (patientList.isEmpty) {
+    print('No Patient Record for Delete');
+  } else {
+    stdout.write('Enter you Id: ');
+    int deleteId = int.parse(stdin.readLineSync()!);
+    bool foundPatient = patientList.any((element) => element['id'] == deleteId);
+
+    if (foundPatient) {
+      patientList.removeWhere((element) => element['id'] == deleteId);
+      print('Patient Delete Successfully');
+    } else {
+      print('Patient Data Not Found!');
+    }
+  }
+}
+}
+
 
 
 
