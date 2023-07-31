@@ -37,7 +37,7 @@ PageOne() {
     } else if (option == 2) {
       ViewPatientRecords();
     } else if (option == 3) {
-      
+      DeletePatient();
     } else if (option == 4) {
       
     } else if (option == 5) {
