@@ -7,6 +7,7 @@ void main (){
   ViewPatientRecords viewPatientRecords = ViewPatientRecords();
   DeletePatient deletePatient = DeletePatient();
   SearchPatient searchPatient = SearchPatient();
+  AppoinmentsSchedule appoinmentsSchedule = AppoinmentsSchedule();
 }
 
 // main screen funcction
