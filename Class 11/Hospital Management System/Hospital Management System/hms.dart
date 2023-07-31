@@ -6,6 +6,7 @@ void main (){
   AddPatient addPatient = AddPatient();
   ViewPatientRecords viewPatientRecords = ViewPatientRecords();
   DeletePatient deletePatient = DeletePatient();
+  SearchPatient searchPatient = SearchPatient();
 }
 
 // main screen funcction
