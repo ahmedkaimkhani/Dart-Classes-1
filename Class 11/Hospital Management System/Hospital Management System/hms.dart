@@ -34,7 +34,7 @@ PageOne() {
     if (option == 1) {
      AddPatient();
     } else if (option == 2) {
-      
+      ViewPatientRecords();
     } else if (option == 3) {
       
     } else if (option == 4) {
