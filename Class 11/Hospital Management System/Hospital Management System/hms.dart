@@ -40,13 +40,13 @@ PageOne() {
     } else if (option == 2) {
       ViewPatientRecords();
     } else if (option == 3) {
-      DeletePatient();
+      UpdateAddPatient();
     } else if (option == 4) {
-      SearchPatient();
+      DeletePatient();
     } else if (option == 5) {
-      AppoinmentsSchedule();
+      SearchPatient();
     } else if (option == 6) {
-     
+     AppoinmentsSchedule();
     } else if (option == 7) {
       
     } else if (option == 8) {
