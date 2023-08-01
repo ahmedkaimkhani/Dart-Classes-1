@@ -24,7 +24,7 @@ class PageOne {
       print('Press 5: Search Patients');
       print('Press 6: Appoinments Schedule');
       print('Press 7: View Appoinments Schedule');
-      print('Press 8: Exit Program');
+      print('Press any other other button: To Exit Program');
 
       print('');
       stdout.write('Enter you option: ');
