@@ -5,6 +5,7 @@ void main (){
   PageOne pageOne = PageOne();
   AddPatient addPatient = AddPatient();
   ViewPatientRecords viewPatientRecords = ViewPatientRecords();
+  UpdateAddPatient updateAddPatient = UpdateAddPatient();
   DeletePatient deletePatient = DeletePatient();
   SearchPatient searchPatient = SearchPatient();
   AppoinmentsSchedule appoinmentsSchedule = AppoinmentsSchedule();
