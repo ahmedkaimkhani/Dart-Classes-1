@@ -124,6 +124,57 @@ ViewPatientRecords() {
 }
 }
 
+class UpdateAddPatient {
+  // update add patient method
+UpdateAddPatient() {
+  if (patientList.isEmpty) {
+    print('No Patient Records to Update');
+  } else {
+    stdout.write('Enter the ID of the patient you want to update:');
+    int updateId = int.parse(stdin.readLineSync()!);
+
+    Map<String, dynamic>? patientToUpdate;
+    for (int i = 0; i < patientList.length; i++) {
+      if (patientList[i]['id'] == updateId) {
+        Map<String, dynamic> patient = patientList[i];
+        patientToUpdate = patient;
+      }
+    }
+    if (patientToUpdate == null) {
+      print('Patient with ID $updateId not found!');
+    } else {
+      print('Current Details:');
+      print('Name: ${patientToUpdate['name']}');
+      print('Age: ${patientToUpdate['age']}');
+      print('Phone Number: ${patientToUpdate['phoneNo']}');
+      print('Gender: ${patientToUpdate['gender']}');
+      print('Address: ${patientToUpdate['address']}');
+
+      stdout.write('Enter Name for update: ');
+      String updateName = stdin.readLineSync()!;
+      stdout.write('Enter the new Age: ');
+      int updateAge = int.parse(stdin.readLineSync()!);
+      stdout.write('Enter the new Phone No: ');
+      int updatePhoneNo = int.parse(stdin.readLineSync()!);
+      stdout.write('Enter the new Gender: ');
+      String updateGender = stdin.readLineSync()!;
+      stdout.write('Enter the new Address: ');
+      String updateAddress = stdin.readLineSync()!;
+
+      print('');
+      patientToUpdate['name'] = updateName;
+      patientToUpdate['age'] = updateAge;
+      patientToUpdate['phoneNo'] = updatePhoneNo;
+      patientToUpdate['gender'] = updateGender;
+      patientToUpdate['address'] = updateAddress;
+
+      print('Patient details updated successfully!');
+    }
+  }
+}
+
+}
+
 class DeletePatient {
   // Delete Patients
 DeletePatient() {
