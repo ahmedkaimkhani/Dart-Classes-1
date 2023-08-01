@@ -1,14 +1,10 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:io';
 
 List<Map<String, dynamic>> patientList = [];
 void main (){
   PageOne pageOne = PageOne();
-  AddPatient addPatient = AddPatient();
-  ViewPatientRecords viewPatientRecords = ViewPatientRecords();
-  UpdateAddPatient updateAddPatient = UpdateAddPatient();
-  DeletePatient deletePatient = DeletePatient();
-  SearchPatient searchPatient = SearchPatient();
-  AppoinmentsSchedule appoinmentsSchedule = AppoinmentsSchedule();
 }
 
 // main screen funcction
@@ -32,25 +28,25 @@ PageOne() {
 
     print('');
     stdout.write('Enter you option: ');
-    int option = int.parse(stdin.readLineSync()!);
+    var option = stdin.readLineSync()!;
     print('');
     // condition = false;
     // press functions
-    if (option == 1) {
+    if (option == '1') {
      AddPatient();
-    } else if (option == 2) {
+    } else if (option == '2') {
       ViewPatientRecords();
-    } else if (option == 3) {
+    } else if (option == '3') {
       UpdateAddPatient();
-    } else if (option == 4) {
+    } else if (option == '4') {
       DeletePatient();
-    } else if (option == 5) {
+    } else if (option == '5') {
       SearchPatient();
-    } else if (option == 6) {
+    } else if (option == '6') {
      AppoinmentsSchedule();
-    } else if (option == 7) {
-      
-    } else if (option == 8) {
+    } else if (option == '7') {
+      ViewAppoinmentsSchedule();
+    } else {
       condition = false;
       print('Exited');
     }
@@ -200,7 +196,7 @@ DeletePatient() {
 
 class SearchPatient {
   // Search Function
-SearchPatients() {
+SearchPatient() {
   print('***=== Search Patient ===***');
   print('');
   if (patientList.isEmpty) {
@@ -271,6 +267,41 @@ AppoinmentsSchedule() {
     } else {
       print('Add Appoinment Schedule Successfully');
     }
+  }
+}
+}
+
+class ViewAppoinmentsSchedule {
+  // View Appoinments Schedule
+ViewAppoinmentsSchedule() {
+  print('***=== View Appoinment Schedule ===***');
+  print('');
+
+  for (int i = 0; i < patientList.length; i++) {
+    Map<String, dynamic> patient = patientList[i];
+    List<dynamic> appoinmentSchedle = patient['appoinmentSchedule'];
+
+    if (appoinmentSchedle.isEmpty) {
+      print('No Patient Appoinment Schedule');
+    } else {
+      print('');
+      print('Patient Appoinments Schedule');
+      print('');
+      for (int j = 0; j < appoinmentSchedle.length; j++) {
+        Map<String, dynamic> appoinments = appoinmentSchedle[j];
+        print('');
+        print('Appoinments: ${j + 1}');
+        print('Patient Id: ${patient['id']}');
+        print('Patient Name: ${patient['name']}');
+        print('');
+        print('**== Appoinment Schedule ==**');
+        print('Doctor Name: ${appoinments['Dr Name']}');
+        print('Appoinment Day: ${appoinments['Appoinment Day']}');
+        print('Appoinment Date: ${appoinments['Appoinment Date']}');
+        print('Appoinment Time: ${appoinments['Appoinment Time']}');
+      }
+    }
+    print('');
   }
 }
 }
