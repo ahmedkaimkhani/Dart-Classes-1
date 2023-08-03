@@ -3,6 +3,10 @@
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
   Dog objDog = Dog();
+  objDog.color = 'Black';
+  objDog.name = 'Dog';
+  objDog.eat();
+  objDog.play();
   Cat objCat = Cat();
 }
 
