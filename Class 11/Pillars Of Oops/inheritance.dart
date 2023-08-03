@@ -7,7 +7,13 @@ void main (){
   objDog.name = 'Dog';
   objDog.eat();
   objDog.play();
+  print('');
   Cat objCat = Cat();
+  objCat.color = 'Grey';
+  objCat.name = 'Cat';
+  objCat.eat();
+  objCat.meow();
+  objCat.play();
 }
 
 class Animal {
