@@ -2,23 +2,9 @@
 // There are three type of inheritance.
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
-  flutter obj = flutter();
-  obj.name = 'Ahmed';
-  obj.rollNo = 110;
-  print('Name: ${obj.name}\nRoll Number: ${obj.rollNo}');
-  obj.batch();
+  
 }
 
-class Student {
-  late int rollNo;
-  late String name;
-}
-
-class flutter extends Student {
-  batch (){
-    print('SMIT Batch: 7 to 9');
-  }
-}
 
 
 // Inheritance
