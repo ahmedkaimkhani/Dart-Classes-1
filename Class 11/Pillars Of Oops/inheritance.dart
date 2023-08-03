@@ -2,7 +2,8 @@
 // There are three type of inheritance.
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
-
+  Dog objDog = Dog();
+  Cat objCat = Cat();
 }
 
 class Animal {
