@@ -7,14 +7,15 @@ void main (){
 
 class Animal {
   String? name;
-  int? age;
-
+  
   void eat (){
     print('$name is eating');
   }
 }
 
-class Dog 
+class Dog {
+
+}
 
 
 // Inheritance
