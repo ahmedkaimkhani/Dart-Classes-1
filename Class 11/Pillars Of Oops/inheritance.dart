@@ -2,12 +2,14 @@
 // There are three type of inheritance.
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
+  // Dog class access just animal properties and method.
   Dog objDog = Dog();
   objDog.color = 'Black';
   objDog.name = 'Dog';
   objDog.eat();
   objDog.play();
   print('');
+  // Cat class can access dog and Animal also.
   Cat objCat = Cat();
   objCat.color = 'Grey';
   objCat.name = 'Cat';
@@ -64,6 +66,47 @@ class Cat extends Dog{
 //     print('SMIT Batch: 7 to 9');
 //   }
 // }
+
+// Multi Level Inheritance
+// (1)
+// void main (){
+//   // Dog class access just animal properties and method.
+//   Dog objDog = Dog();
+//   objDog.color = 'Black';
+//   objDog.name = 'Dog';
+//   objDog.eat();
+//   objDog.play();
+//   print('');
+//   // Cat class can access dog and Animal also.
+//   Cat objCat = Cat();
+//   objCat.color = 'Grey';
+//   objCat.name = 'Cat';
+//   objCat.eat();
+//   objCat.meow();
+//   objCat.play();
+// }
+
+// class Animal {
+//   String? name;
+
+//   void eat (){
+//     print('$name is eating');
+//   }
+// }
+
+// class Dog extends Animal{
+//   String? color;
+//   void play (){
+//     print('Dog is playing');
+//   }
+// }
+
+// class Cat extends Dog{
+//   void meow (){
+//     print('Cat is meowing');
+//   }
+// }
+
 
 // Hierarchical Inheritance.
 // (1)
