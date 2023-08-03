@@ -2,9 +2,17 @@
 // There are three type of inheritance.
 // 1: Single Inheritance, 2: Multi-Level Inheritance and Hierarchical Inheritance.
 void main (){
-  
+
 }
 
+class Animal {
+  String? name;
+  int? age;
+
+  void eat (){
+    print('$name is eating');
+  }
+}
 
 
 // Inheritance
