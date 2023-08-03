@@ -7,14 +7,17 @@ void main (){
 
 class Animal {
   String? name;
-  
+
   void eat (){
     print('$name is eating');
   }
 }
 
 class Dog {
-
+  String? color;
+  void play (){
+    print('Dog is playing');
+  }
 }
 
 
