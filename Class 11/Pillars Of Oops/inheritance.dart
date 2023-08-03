@@ -44,6 +44,8 @@ class Dog
 //   }
 // }
 
+// Hierarchical Inheritance.
+// (1)
 // void main (){
 //   Dog dog = Dog();
 //   dog.name = 'Bazil';
