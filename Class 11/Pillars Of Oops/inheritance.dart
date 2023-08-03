@@ -13,14 +13,14 @@ class Animal {
   }
 }
 
-class Dog {
+class Dog extends Animal{
   String? color;
   void play (){
     print('Dog is playing');
   }
 }
 
-class Cat {
+class Cat extends Dog{
   void meow (){
     print('Cat is meowing');
   }
