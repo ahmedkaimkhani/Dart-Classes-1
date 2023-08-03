@@ -20,6 +20,12 @@ class Dog {
   }
 }
 
+class Cat {
+  void meow (){
+    print('Cat is meowing');
+  }
+}
+
 
 // Inheritance
 
