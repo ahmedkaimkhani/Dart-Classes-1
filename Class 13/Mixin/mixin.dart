@@ -1,5 +1,8 @@
+// Note: You can’t create an object of mixin.
 void main (){
-  
+  Car car = Car();
+  car.electricVarient();
+  car.petrolVarient();
 }
 
 mixin ElectricVarient {
@@ -14,5 +17,6 @@ mixin PetrolVarient {
   }
 }
 
+// with is used to acces multiple mixin in class. 
 class Car with ElectricVarient, PetrolVarient {
 }
