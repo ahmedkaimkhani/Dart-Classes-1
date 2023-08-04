@@ -7,13 +7,13 @@
 // can be inherited by other classes. You can define an abstract
 // method inside an abstract class.
 void main (){
-  SBI sbi = SBI('SBI', 8.4);
-  ICICI icici = ICICI('ICICI', 7.3);
+  UBL ubl = UBL('UBL', 8.4);
+  HBL hbl = HBL('HBL', 7.3);
 
-  sbi.interest();
+  ubl.interest();
   print('');
-  icici.interest();
-  icici.display();
+  hbl.interest();
+  hbl.display();
 }
 
 abstract class Bank {
@@ -33,25 +33,25 @@ abstract class Bank {
   }
 }
 
-class SBI extends Bank {
+class UBL extends Bank {
   // constructor
-  SBI(String name, double rate) :super(name, rate);
+  UBL(String name, double rate) :super(name, rate);
 
   // Implementation of interest()
   @override
   void interest() {
-    print('The rate of interest of SBI is $rate');
+    print('The rate of interest of UBL is $rate');
   }
 }
 
-class ICICI extends Bank {
+class HBL extends Bank {
   // constructor
-  ICICI(String name, double rate) :super(name, rate);
+  HBL(String name, double rate) :super(name, rate);
 
   // Implementation of interest()
   @override
   void interest() {
-    print('The rate of interest of ICICI is $rate');
+    print('The rate of interest of HBL is $rate');
   }
 }
 
