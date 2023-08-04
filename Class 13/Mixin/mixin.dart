@@ -1,24 +1,26 @@
 // Note: You can’t create an object of mixin.
 // with keyword in mixin.
 void main (){
-
+  Bird bird = Bird();
+  bird.walk();
 }
 
 mixin CanFly {
-  void fly (){
-    print('i can fly');
-  }
   void walk (){
     print('i can walk 1');
   }
 }
 mixin CanWalk {
+  // i take 2 methods of walk name in different mixin.
   void walk (){
     print('i can walk');
   }
 }
-
+// ager hum same name ka method diff mixin me lenge tw jab multiple mixin ek 
+// class me call keringe to last wala method run hoga.
 class Bird with CanFly, CanWalk{}
+
+// Output: i can walk
 
 
 // Note: You can’t create an object of mixin.
