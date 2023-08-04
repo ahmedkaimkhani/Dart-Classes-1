@@ -1,8 +1,23 @@
 // Note: You can’t create an object of mixin.
 // with keyword in mixin.
 void main (){
-  
+
 }
+
+mixin CanFly {
+  void fly (){
+    print('i can fly');
+  }
+  void walk (){
+    print('i can walk 1');
+  }
+}
+mixin CanWalk {
+  void walk (){
+    print('i can walk');
+  }
+}
+
 
 // Note: You can’t create an object of mixin.
 // with keyword in mixin.
