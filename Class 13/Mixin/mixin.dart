@@ -4,6 +4,9 @@ void main (){
   Bird bird = Bird();
   bird.fly();
   bird.walk();
+  print('');
+  Human human = Human();
+  human.walk();
 }
 
 mixin CanFly {
@@ -16,6 +19,7 @@ mixin CanWalk {
     print('i can walk');
   }
 }
+// you can access mixin in multipe class
 class Bird with CanFly, CanWalk{}
 
 class Human with CanWalk{}
@@ -92,3 +96,34 @@ class Human with CanWalk{}
 // class Bird with CanFly, CanWalk{} // last wala mixin call hoga
 
 // // Output: i can walk
+
+//(4)
+// void main (){
+//   Bird bird = Bird();
+//   bird.fly();
+//   bird.walk();
+//   print('');
+//   Human human = Human();
+//   human.walk();
+// }
+
+// mixin CanFly {
+//   void fly (){
+//     print('i can fly');
+//   }
+// }
+// mixin CanWalk {
+//   void walk (){
+//     print('i can walk');
+//   }
+// }
+// // you can access mixin in multipe class
+// class Bird with CanFly, CanWalk{}
+
+// class Human with CanWalk{}
+
+// Output: 
+// i can fly
+// i can walk
+
+// i can walk
