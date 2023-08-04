@@ -18,7 +18,7 @@ mixin CanWalk {
 }
 // ager hum same name ka method diff mixin me lenge tw jab multiple mixin ek 
 // class me call keringe to last wala method run hoga.
-class Bird with CanFly, CanWalk{}
+class Bird with CanFly, CanWalk{} // last wala mixin call hoga
 
 // Output: i can walk
 
@@ -47,3 +47,49 @@ class Bird with CanFly, CanWalk{}
 // // with is used to acces multiple mixin in class. 
 // class Car with ElectricVarient, PetrolVarient {
 // }
+
+//(2)
+// void main (){
+//   Bird bird = Bird();
+//   bird.walk();
+// }
+
+// mixin CanFly {
+//   void walk (){
+//     print('i can walk 1');
+//   }
+// }
+// mixin CanWalk {
+//   // i take 2 methods of walk name in different mixin.
+//   void walk (){
+//     print('i can walk');
+//   }
+// }
+// // ager hum same name ka method diff mixin me lenge tw jab multiple mixin ek 
+// // class me call keringe to last wala method run hoga.
+// class Bird with CanWalk, CanFly{} // i reversed it
+
+// // Output: i can walk 1
+
+//(3)
+// void main (){
+//   Bird bird = Bird();
+//   bird.walk();
+// }
+
+// mixin CanFly {
+//   void walk (){
+//     print('i can walk 1');
+//   }
+// }
+// mixin CanWalk {
+//   // i take 2 methods of walk name in different mixin.
+//   void walk (){
+//     print('i can walk');
+//   }
+// }
+// // ager hum same name ka method diff mixin me lenge tw jab multiple mixin ek 
+// // class me call keringe to last wala method run hoga.
+// class Bird with CanFly, CanWalk{} // last wala mixin call hoga
+
+// // Output: i can walk
