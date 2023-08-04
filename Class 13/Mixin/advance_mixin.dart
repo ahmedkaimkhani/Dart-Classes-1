@@ -1,8 +1,5 @@
 // Note: You can’t create an object of mixin.
 // On keyword in mixin.
-
-import '../../Class 11/Pillars Of Oops/inheritance.dart';
-
 void main (){
 
 }
@@ -14,4 +11,19 @@ abstract class Human {
 
   // constructor
   Human (this.name, this.speed);
+
+  // Abstract method
+  void run ();
+}
+
+mixin CanRun on Human {
+
+  @override
+  void run() => print('$name is running at the speed $speed');
+  
+}
+
+class Ahmed extends Human with CanRun {
+  Ahmed(String name, int speed): super(name, speed);
+  
 }
