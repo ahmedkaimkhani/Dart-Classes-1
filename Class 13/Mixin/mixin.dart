@@ -14,7 +14,7 @@ mixin ElectricVarient {
 
 mixin PetrolVarient {
   void petrolVarient (){
-    print('This is an petrol vvarient');
+    print('This is an petrol varient');
   }
 }
 
