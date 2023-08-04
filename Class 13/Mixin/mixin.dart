@@ -18,6 +18,8 @@ mixin CanWalk {
   }
 }
 
+class Bird with CanFly, CanWalk{}
+
 
 // Note: You can’t create an object of mixin.
 // with keyword in mixin.
