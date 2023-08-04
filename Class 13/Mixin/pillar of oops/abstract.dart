@@ -13,10 +13,10 @@ void main (){
 abstract class Bank {
   // properties
   String? name;
-  double? rates;
+  double? rate;
 
   // constructor
-  Bank (this.name, this.rates);
+  Bank (this.name, this.rate);
 
   // abstract methods
   void interest ();
@@ -24,6 +24,28 @@ abstract class Bank {
   // non-abstract metod
   void display (){
     print('Bank Name: $name');
+  }
+}
+
+class SBI extends Bank {
+  // constructor
+  SBI(String name, double rate) :super(name, rate);
+
+  // Implementation of interest()
+  @override
+  void interest() {
+    print('The rate of interest of SBI is $rate');
+  }
+}
+
+class ICICI extends Bank {
+  // constructor
+  ICICI(String name, double rate) :super(name, rate);
+
+  // Implementation of interest()
+  @override
+  void interest() {
+    print('The rate of interest of ICICI is $rate');
   }
 }
 
