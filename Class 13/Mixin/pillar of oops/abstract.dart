@@ -10,26 +10,23 @@ void main (){
 
 }
 
-abstract class Shape {
-  // Properties
-  late int dm1;
-  late int dm2;
+abstract class Bank {
+  // properties
+  String? name;
+  double? rates;
 
-  //constructor
-  Shape (this.dm1, this.dm2);
+  // constructor
+  Bank (this.name, this.rates);
 
-  // abstract method
-  void area ();
-}
+  // abstract methods
+  void interest ();
 
-class Rectangle extends Shape {
-  Rectangle(int dm1, int dm2) :super(dm1,dm2);
-
-  @override
-  void area() {
-    print('The area of reactangle is ${dm1 * dm2}');
+  // non-abstract metod
+  void display (){
+    print('Bank Name: $name');
   }
 }
+
 
 //(1);
 // void main (){
@@ -78,3 +75,48 @@ class Rectangle extends Shape {
 //     print('Bus stopped');
 //   }
 // }
+
+//(2)
+// void main (){
+//   Rectangle rectangle = Rectangle(10, 20);
+//   rectangle.area();
+//   Triangle triangle = Triangle(10, 20);
+//   triangle.area();
+// }
+
+// abstract class Shape {
+//   // Properties
+//   late int dm1;
+//   late int dm2;
+
+//   //constructor
+//   Shape (this.dm1, this.dm2);
+
+//   // abstract method
+//   void area ();
+// }
+
+// // Create subclass
+// class Rectangle extends Shape {
+//   // constructor
+//   Rectangle(int dm1, int dm2) :super(dm1,dm2);
+//   // Implementation of area()
+//   @override
+//   void area() {
+//     print('The area of reactangle is ${dm1 * dm2}');
+//   }
+// }
+
+// // Create subclass
+// class Triangle extends Shape {
+//   // constructor
+//   Triangle(int dm1, int dm2) :super(dm1,dm2);
+//   // Implementation of area()
+//   @override
+//   void area() {
+//     print('The area of triangle is ${0.5 * dm1 * dm2}');
+//   }
+// }
+// // Output: 
+// // The area of reactangle is 200
+// // The area of triangle is 100.0
