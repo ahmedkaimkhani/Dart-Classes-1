@@ -13,3 +13,6 @@ mixin PetrolVarient {
     print('This is an petrol varient');
   }
 }
+
+class Car with ElectricVarient, PetrolVarient {
+}
