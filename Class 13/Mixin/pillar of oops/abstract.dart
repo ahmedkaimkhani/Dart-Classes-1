@@ -54,6 +54,11 @@ class HBL extends Bank {
     print('The rate of interest of HBL is $rate');
   }
 }
+// Output:
+// The rate of interest of UBL is 8.4
+
+// The rate of interest of HBL is 7.3
+// Bank Name: HBL
 
 
 //(1);
@@ -148,3 +153,59 @@ class HBL extends Bank {
 // // Output: 
 // // The area of reactangle is 200
 // // The area of triangle is 100.0
+
+// Abstract with Constructor
+// (1)
+// void main (){
+//   UBL ubl = UBL('UBL', 8.4);
+//   HBL hbl = HBL('HBL', 7.3);
+
+//   ubl.interest();
+//   print('');
+//   hbl.interest();
+//   hbl.display();
+// }
+
+// abstract class Bank {
+//   // properties
+//   String? name;
+//   double? rate;
+
+//   // constructor
+//   Bank (this.name, this.rate);
+
+//   // abstract methods
+//   void interest ();
+
+//   // non-abstract metod
+//   void display (){
+//     print('Bank Name: $name');
+//   }
+// }
+
+// class UBL extends Bank {
+//   // constructor
+//   UBL(String name, double rate) :super(name, rate);
+
+//   // Implementation of interest()
+//   @override
+//   void interest() {
+//     print('The rate of interest of UBL is $rate');
+//   }
+// }
+
+// class HBL extends Bank {
+//   // constructor
+//   HBL(String name, double rate) :super(name, rate);
+
+//   // Implementation of interest()
+//   @override
+//   void interest() {
+//     print('The rate of interest of HBL is $rate');
+//   }
+// }
+// // Output:
+// // The rate of interest of UBL is 8.4
+
+// // The rate of interest of HBL is 7.3
+// // Bank Name: HBL
