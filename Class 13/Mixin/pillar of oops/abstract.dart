@@ -7,7 +7,13 @@
 // can be inherited by other classes. You can define an abstract
 // method inside an abstract class.
 void main (){
+  SBI sbi = SBI('SBI', 8.4);
+  ICICI icici = ICICI('ICICI', 7.3);
 
+  sbi.interest();
+  print('');
+  icici.interest();
+  icici.display();
 }
 
 abstract class Bank {
