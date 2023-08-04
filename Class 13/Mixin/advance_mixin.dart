@@ -1,5 +1,7 @@
 // Note: You can’t create an object of mixin.
 // On keyword in mixin.
+// Sometimes, you want to use a mixin only with a specific class.
+// In this case, you can use the on keyword.
 void main (){
   Ahmed ahmed = Ahmed('Ahmed', 10.0);
   ahmed.run();
@@ -30,3 +32,4 @@ class Ahmed extends Human with CanRun {
   Ahmed(String name, double speed): super(name, speed);
   
 }
+//Output: Ahmed is running at the speed 10.0
