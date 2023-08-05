@@ -11,6 +11,18 @@ void main (){
 
 abstract class Person {
   // abstract method
-  void canEat ();
-  void canRun ();
+  void canRead ();
+  void canPlay ();
+}
+
+class Student implements Person {
+  @override
+  void canRead() {
+    print('Student can Read');
+  }
+
+  @override
+  void canPlay (){
+    print('Student can Play');
+  }
 }
