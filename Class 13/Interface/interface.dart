@@ -6,7 +6,9 @@
 // It is used to achieve abstraction
 // Most of the time, abstract class is used instead of concrete class to declare an interface.
 void main (){
-
+  Student student = Student();
+  student.canRead();
+  student.canPlay();
 }
 
 // creating an interface using abstract class
@@ -23,7 +25,7 @@ class Student implements Person {
     print('Student can Read');
   }
 
-  // implementation of canPlay
+  // implementation of
   @override
   void canPlay (){
     print('Student can Play');
