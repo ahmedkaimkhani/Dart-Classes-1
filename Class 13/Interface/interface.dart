@@ -9,6 +9,7 @@ void main (){
 
 }
 
+// creating an interface using abstract class
 abstract class Person {
   // abstract method
   void canRead ();
@@ -16,11 +17,13 @@ abstract class Person {
 }
 
 class Student implements Person {
+  // implementation of canRead
   @override
   void canRead() {
     print('Student can Read');
   }
 
+  // implementation of canPlay
   @override
   void canPlay (){
     print('Student can Play');
