@@ -32,13 +32,56 @@ class Rectangle implements Area, Perimeter {
   // implementation of area()
   @override 
   void area (){
-    print('The area of rectangle id ${lenght * breadth}');
+    print('The area of rectangle is ${lenght * breadth}');
   }
 
   // implementation of perimeter()
   @override 
   void perimeter (){
-    print('The perimeter of rectangle is ${2 * (lenght * breadth)}');
+    print('The perimeter of rectangle is ${2 * (lenght + breadth)}');
   }
-
 }
+// Output:
+// The area of rectangle is 200
+// The perimeter of rectangle is 60
+
+
+//(1)
+// void main (){
+//   Rectangle rectangle = Rectangle(10, 20);
+//   rectangle.area();
+//   rectangle.perimeter();
+// }
+
+// abstract class Area {
+//   // abstract method
+//   void area ();
+// }
+
+// abstract class Perimeter {
+//   // abstract method
+//   void perimeter ();
+// }
+
+// // implements multiple interfaces
+// class Rectangle implements Area, Perimeter {
+//   // properties
+//   late int lenght, breadth;
+//   // construtor
+//   Rectangle (this.lenght, this.breadth);
+
+//   // implementation of area()
+//   @override 
+//   void area (){
+//     print('The area of rectangle is ${lenght * breadth}');
+//   }
+
+//   // implementation of perimeter()
+//   @override 
+//   void perimeter (){
+//     print('The perimeter of rectangle is ${2 * (lenght + breadth)}');
+//   }
+// }
+// // Output:
+// // The area of rectangle is 200
+// // The perimeter of rectangle is 60
