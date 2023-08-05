@@ -19,6 +19,19 @@ class Laptop {
     }
 }
 
+class Windows implements Laptop {
+  // implementation of turnOn
+  @override
+  void turnOn() {
+    print('Windows Turn On');
+  }
+  // implementation of turnOff
+  @override
+  void turnOff (){
+    print('Windows Turn Off');
+  } 
+}
+
 
 //(1)
 // void main (){
