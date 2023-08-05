@@ -6,28 +6,44 @@
 // It is used to achieve abstraction
 // Most of the time, abstract class is used instead of concrete class to declare an interface.
 void main (){
-  Student student = Student();
-  student.canRead();
-  student.canPlay();
 }
 
-// creating an interface using abstract class
-abstract class Person {
-  // abstract method
-  void canRead ();
-  void canPlay ();
+class Laptop {
+    // method
+    void turnOn (){
+      print('Laptop Turn on');
+    }
+    // method
+    void turnOff (){
+      print('Laptop Turn off');
+    }
 }
 
-class Student implements Person {
-  // implementation of canRead
-  @override
-  void canRead() {
-    print('Student can Read');
-  }
 
-  // implementation of
-  @override
-  void canPlay (){
-    print('Student can Play');
-  }
-}
+//(1)
+// void main (){
+//   Student student = Student();
+//   student.canRead();
+//   student.canPlay();
+// }
+
+// // creating an interface using abstract class
+// abstract class Person {
+//   // abstract method
+//   void canRead ();
+//   void canPlay ();
+// }
+
+// class Student implements Person {
+//   // implementation of canRead
+//   @override
+//   void canRead() {
+//     print('Student can Read');
+//   }
+
+//   // implementation of
+//   @override
+//   void canPlay (){
+//     print('Student can Play');
+//   }
+// }
