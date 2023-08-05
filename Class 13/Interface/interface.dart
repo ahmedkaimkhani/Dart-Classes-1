@@ -6,8 +6,12 @@
 // It is used to achieve abstraction
 // Most of the time, abstract class is used instead of concrete class to declare an interface.
 void main (){
+  Windows windows = Windows();
+  windows.turnOn();
+  windows.turnOff();
 }
 
+// creating an interface using concrete class
 class Laptop {
     // method
     void turnOn (){
