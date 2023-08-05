@@ -4,6 +4,13 @@
 // A class can extend only one class but can implement multiple interfaces.
 // Using the interface, you can achieve multiple inheritance in Dart.
 // It is used to achieve abstraction
+// Most of the time, abstract class is used instead of concrete class to declare an interface.
 void main (){
 
+}
+
+abstract class Person {
+  // abstract method
+  void canEat ();
+  void canRun ();
 }
