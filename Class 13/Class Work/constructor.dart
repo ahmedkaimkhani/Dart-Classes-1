@@ -111,3 +111,23 @@ class Person {
 //   }
 // }
 // Output: Name: Ahmed & Age: 15
+
+// (2)
+// void main (){
+//   Person person = Person( age: 15);
+//   person.display();
+// }
+
+// class Person {
+//   String? name;
+//   int? age;
+
+//   // short way, this. hum perameter me he variable name kay sath use kr leinge.
+//   // named & optional perameter
+//   Person ({this.name = 'Ahmed', this.age}); // we can also set default value
+
+//   display (){
+//   print('Name: $name & Age: $age');
+
+//   }
+// }
