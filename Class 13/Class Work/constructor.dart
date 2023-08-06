@@ -2,6 +2,7 @@
 // constructor name must have same name with class .
 // this. object kay reference kay liye use kia jata hai.
 void main (){
+  Person person = Person('Ahmed', 10);
 }
 
 class Person {
@@ -9,8 +10,11 @@ class Person {
   int? age;
 
   Person (name, age){
-    name = name;
-    age = age;
+    // this. perameter ki value ko class ki properties/attributes me store krne kay liye
+    // use kia hai obj kay ref kay liye.
+    this.name = name;
+    this.age = age;
+    print('Name: $name, Age: $age');
   }
 }
 
@@ -28,5 +32,23 @@ class Person {
 //   // constructor
 //   Person (){
 //     print('Im default constructor');
+//   }
+// }
+
+// Perameterize Constructor
+// (1)
+// void main (){
+//   Person person = Person('Ahmed', 10);
+// }
+
+// class Person {
+//   String? name;
+//   int? age;
+  
+//   // name age without this. use hua tw program ne nearest variable me value store hoge.
+//   Person (name, age){
+//     name = name;
+//     age = age;
+//     print('Name: $name and Age: $age');
 //   }
 // }
