@@ -41,3 +41,6 @@ class Student implements CalculateTotal, CalculateAverage {
     return english + math + computer;
   }
 }
+// Output: 
+// Total Marks 249
+// Average of Marks 83.0
