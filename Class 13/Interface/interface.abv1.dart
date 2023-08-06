@@ -7,18 +7,24 @@
 // Most of the time, abstract class is used instead of concrete class to declare an interface.
 // You must have override method and properties in implement class
 void main (){
+  Student student = Student(89, 68, 92);
+  print('Total Marks ${student.total()}');
+  print('Average of Marks ${student.average()}');
 }
 
+// abstract class as interface
 abstract class CalculateTotal {
   // abstract method
   int total ();
 }
 
+// abstract class as interface
 abstract class CalculateAverage {
   // abstract method 
   double average ();
 }
 
+// implements multiple interfaces
 class Student implements CalculateTotal, CalculateAverage {
   // properties
   late int english, math, computer;
