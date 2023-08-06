@@ -7,5 +7,31 @@
 // Most of the time, abstract class is used instead of concrete class to declare an interface.
 // You must have override method and properties in implement class
 void main (){
+}
 
+abstract class CalculateTotal {
+  // abstract method
+  int total ();
+}
+
+abstract class CalculateAverage {
+  // abstract method 
+  double average ();
+}
+
+class Student implements CalculateTotal, CalculateAverage {
+  // properties
+  late int english, math, computer;
+  // constructor
+  Student (this.english, this.math, this.computer);
+  // implementation of average 
+  @override
+  double average() {
+    return total() / 3;
+  }
+  // implementation of total
+  @override
+  int total() {
+    return english + math + computer;
+  }
 }
