@@ -17,6 +17,8 @@ class Bike {
 // sub/child class
 class Cycle extends Bike {
   // perameterize constructor
+  // super class kay constructor ko ap sub class kay constructor kay
+  // aagy :super() use krky value de sakty hain.
   Cycle(int age):super(100){
     print('Age: $age');
   }
@@ -256,3 +258,31 @@ class Cycle extends Bike {
 // It's default constructor in inheritance 
 // Name : Ahmed
 // Age : 21
+
+//(2)
+// void main() {
+// Cycle cycle = Cycle(21);
+// }
+
+// // Super/Parent class
+// class Bike {
+//   //properties/ attributes
+//   String? name;
+//   // perameterize constructor
+//   Bike (int price){
+//     print('Price: $price');
+//   }
+// }
+
+// // sub/child class
+// class Cycle extends Bike {
+//   // perameterize constructor
+//   // super class kay constructor ko ap sub class kay constructor kay
+//   // aagy :super() use krky value de sakty hain.
+//   Cycle(int age):super(100){
+//     print('Age: $age');
+//   }
+// }
+// Output:
+// Price: 100
+// Age: 21
