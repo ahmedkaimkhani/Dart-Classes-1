@@ -1,36 +1,22 @@
 // There are three types of inheritance:
 // 1: Single Inheritance, 2: Multi-Level Inheritance & 3: Hierarchical Inheritance
-void main (){
-  Ahmed ahmed = Ahmed();
-  ahmed.name = 'Ahmed';
-  ahmed.age = 21;
-  ahmed.dispalyInfo();
-  ahmed.displayAhmed();
-}
+void main() {}
+
 // parent class
 class Person {
   // Properties/Attributes
   String? name;
   int? age;
+
+  // Default Constructor
+  // constructor will work in all types of inheritance.
+  Person() {
+    print('It\'s default constructor in inheritance ');
+  }
   // method/behavior
-  void dispalyInfo (){
+  void dispalyInfo() {
     print('Name : $name');
     print('Age : $age');
-  }
-}
-// child/sub class
-// inherit krne kay liye extent keyword use krty hain
-class Student extends Person {
-  // method/behavior
-  displayStudent (){
-    print('Student ka Function');
-  }
-}
-// child/sub class
-class Ahmed extends Person {
-  // method/behavior
-  displayAhmed (){
-    print('Yeh Ahmed ka function hai');
   }
 }
 
@@ -144,3 +130,7 @@ class Ahmed extends Person {
 //     print('Yeh Ahmed ka function hai');
 //   }
 // }
+// Output:
+// Name : Ahmed
+// Age : 21
+// Yeh Ahmed ka function hai
