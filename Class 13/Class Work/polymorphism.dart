@@ -1,3 +1,6 @@
+// Advantages of Polymorphism in dart
+// 1: Sub-class can @override the behavior of parent class
+// 2: It allow us to write code that's more flexible and reusable.
 void main (){
   // you give arguments in constructor but out me yeh nh ayege 
   Student student = Student('Ahmed', 21);
