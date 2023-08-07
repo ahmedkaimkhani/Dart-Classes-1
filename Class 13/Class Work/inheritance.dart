@@ -1,26 +1,28 @@
 // There are three types of inheritance:
 // 1: Single Inheritance, 2: Multi-Level Inheritance & 3: Hierarchical Inheritance
 void main() {
-Cycle cycle = Cycle(21);
+Cycle cycle = Cycle('Ahmed',500);
+cycle.display();
 }
 
 // Super/Parent class
 class Bike {
   //properties/ attributes
   String? name;
+  int? price;
   // perameterize constructor
-  Bike (int price){
-    print('Price: $price');
-  }
+  Bike (this.name, this.price);
 }
 
 // sub/child class
 class Cycle extends Bike {
   // perameterize constructor
-  // super class kay constructor ko ap sub class kay constructor kay
-  // aagy :super() use krky value de sakty hain.
-  Cycle(int age):super(100){
-    print('Age: $age');
+  // calling super constructor
+  Cycle(super.name, super.price);
+  // method/ behaviour
+  void display (){
+    print('Name is : $name');
+    print('Price is : $price');
   }
 }
 
@@ -286,3 +288,34 @@ class Cycle extends Bike {
 // Output:
 // Price: 100
 // Age: 21
+
+// (3)
+// void main() {
+// Cycle cycle = Cycle('Ahmed',500);
+// cycle.display();
+// }
+
+// // Super/Parent class
+// class Bike {
+//   //properties/ attributes
+//   String? name;
+//   int? price;
+//   // perameterize constructor
+//   Bike (this.name, this.price);
+// }
+
+// // sub/child class
+// class Cycle extends Bike {
+//   // perameterize constructor
+//   // calling super constructor
+//   Cycle(super.name, super.price);
+//   // method/ behaviour
+//   void display (){
+//     print('Name is : $name');
+//     print('Price is : $price');
+//   }
+// }
+// Output:
+// Name is : Ahmed
+// Price is : 500
+
