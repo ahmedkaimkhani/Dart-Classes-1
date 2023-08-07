@@ -69,6 +69,7 @@ class Ahmed extends Person {
 // Student ka Function
 
 // Multi-Level Inheritance
+
 // void main (){
 //   Ahmed ahmed = Ahmed();
 //   ahmed.name = 'Ahmed';
@@ -107,3 +108,39 @@ class Ahmed extends Person {
 // Age : 21
 // Student ka Function
 // Yeh Ahmed ka function hai
+
+// Hierarchical Inheritance
+// (1) ek class ko alag alag subclass se inherit krny ko hierarchical inheritance kehty hain
+// void main (){
+//   Ahmed ahmed = Ahmed();
+//   ahmed.name = 'Ahmed';
+//   ahmed.age = 21;
+//   ahmed.dispalyInfo();
+//   ahmed.displayAhmed();
+// }
+// // parent class
+// class Person {
+//   // Properties/Attributes
+//   String? name;
+//   int? age;
+//   // method/behavior
+//   void dispalyInfo (){
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
+// }
+// // child/sub class
+// // inherit krne kay liye extent keyword use krty hain
+// class Student extends Person {
+//   // method/behavior
+//   displayStudent (){
+//     print('Student ka Function');
+//   }
+// }
+// // child/sub class
+// class Ahmed extends Person {
+//   // method/behavior
+//   displayAhmed (){
+//     print('Yeh Ahmed ka function hai');
+//   }
+// }
