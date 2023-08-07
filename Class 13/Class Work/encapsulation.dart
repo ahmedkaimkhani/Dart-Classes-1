@@ -26,3 +26,26 @@ class Person {
 class Employee extends Person {
 
 }
+
+// Encapsulation in Dart
+// (1)
+// void main (){
+//   Employee emp = Employee();
+//   emp._display();
+// }
+
+// class Person {
+//   // properties/attributes
+//   String name = 'Ahmed';
+//   // you can acces private _bankDetails in this files but you can't access in other files.
+//   String _bankDetails = 'aaa-bbb-ccc';
+
+//   void _display (){
+//     print('Name: $name & Bank Details: $_bankDetails');
+//   }
+// }
+
+// class Employee extends Person {
+
+// }
+// Output: Name: Ahmed & Bank Details: aaa-bbb-ccc
