@@ -1,31 +1,25 @@
 // There are three types of inheritance:
 // 1: Single Inheritance, 2: Multi-Level Inheritance & 3: Hierarchical Inheritance
 void main() {
-  // i create just obj and constructor is called.
-  Student student = Student('Ahmed', 21);
-  student.dispalyInfo();
+Cycle cycle = Cycle(21);
 }
 
-// parent class
-class Person {
-  // Properties/Attributes
+// Super/Parent class
+class Bike {
+  //properties/ attributes
   String? name;
-  int? age;
-
-  // Default Constructor
-  // constructor will work in all types of inheritance.
-  Person(this.name, this.age) {
-    print('It\'s default constructor in inheritance ');
-  }
-  // method/behavior
-  void dispalyInfo() {
-    print('Name : $name');
-    print('Age : $age');
+  // perameterize constructor
+  Bike (int price){
+    print('Price: $price');
   }
 }
 
-class Student extends Person {
-  Student(String name, int age):super(name,age);
+// sub/child class
+class Cycle extends Bike {
+  // perameterize constructor
+  Cycle(int age):super(100){
+    print('Age: $age');
+  }
 }
 
 
@@ -143,7 +137,7 @@ class Student extends Person {
 // Age : 21
 // Yeh Ahmed ka function hai
 
-// Inheritance with Constructor 
+// Inheritance with Default Constructor 
 // (1)
 // void main() {
 //   // i create just obj and constructor is called.
@@ -204,6 +198,31 @@ class Student extends Person {
 // Name : Ahmed
 // Age : 21
 
+// (3)
+// void main() {
+//   // i create just obj and constructor is called.
+//   Student student = Student();
+// }
+
+// // parent/super class
+// class Person {
+//   // Default Constructor
+//   // constructor will work in all types of inheritance.
+//   Person(){
+//     print('Default Constructor in inheritance');
+//   }
+//   }
+// // you can use :super or not  in default constructor but default constructor
+// // of super class will called when obj is cretaed.
+// class Student extends Person {
+//   Student ():super(){
+//     print('Sub class constructor');
+//   }
+// }
+// Output:
+// Default Constructor in inheritance
+// Sub class constructor
+
 // Inheritance with  Perameterize Constructor
 // (1)
 // void main() {
@@ -233,3 +252,7 @@ class Student extends Person {
 // class Student extends Person {
 //   Student(String name, int age):super(name,age);
 // } 
+// Output : 
+// It's default constructor in inheritance 
+// Name : Ahmed
+// Age : 21
