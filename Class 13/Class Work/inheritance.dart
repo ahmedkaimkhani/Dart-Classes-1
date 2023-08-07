@@ -1,6 +1,10 @@
 // There are three types of inheritance:
 // 1: Single Inheritance, 2: Multi-Level Inheritance & 3: Hierarchical Inheritance
-void main() {}
+void main() {
+  // i create just obj and constructor is called.
+  Student student = Student('Ahmed', 21);
+  student.dispalyInfo();
+}
 
 // parent class
 class Person {
@@ -10,7 +14,7 @@ class Person {
 
   // Default Constructor
   // constructor will work in all types of inheritance.
-  Person() {
+  Person(this.name, this.age) {
     print('It\'s default constructor in inheritance ');
   }
   // method/behavior
@@ -18,6 +22,10 @@ class Person {
     print('Name : $name');
     print('Age : $age');
   }
+}
+
+class Student extends Person {
+  Student(String name, int age):super(name,age);
 }
 
 
@@ -134,3 +142,94 @@ class Person {
 // Name : Ahmed
 // Age : 21
 // Yeh Ahmed ka function hai
+
+// Inheritance with Constructor 
+// (1)
+// void main() {
+//   // i create just obj and constructor is called.
+//   Student student = Student();
+// }
+
+// // parent class
+// class Person {
+//   // Properties/Attributes
+//   String? name;
+//   int? age;
+
+//   // Default Constructor
+//   // constructor will work in all types of inheritance.
+//   Person() {
+//     print('It\'s default constructor in inheritance ');
+//   }
+//   // method/behavior
+//   void dispalyInfo() {
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
+// }
+
+// class Student extends Person {}
+// Output: It's default constructor in inheritance
+
+// (2)
+// void main() {
+//   // i create just obj and constructor is called.
+//   Student student = Student();
+//   student.name = 'Ahmed';
+//   student.age = 21;
+//   student.dispalyInfo();
+// }
+
+// // parent class
+// class Person {
+//   // Properties/Attributes
+//   String? name;
+//   int? age;
+
+//   // Default Constructor
+//   // constructor will work in all types of inheritance.
+//   Person() {
+//     print('It\'s default constructor in inheritance ');
+//   }
+//   // method/behavior
+//   void dispalyInfo() {
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
+// }
+
+// class Student extends Person {}
+// Output: 
+// It's default constructor in inheritance 
+// Name : Ahmed
+// Age : 21
+
+// Inheritance with  Perameterize Constructor
+// (1)
+// void main() {
+//   // i create just obj and constructor is called.
+//   Student student = Student('Ahmed', 21);
+//   student.dispalyInfo();
+// }
+
+// // parent class
+// class Person {
+//   // Properties/Attributes
+//   String? name;
+//   int? age;
+
+//   // Default Constructor
+//   // constructor will work in all types of inheritance.
+//   Person(this.name, this.age) {
+//     print('It\'s default constructor in inheritance ');
+//   }
+//   // method/behavior
+//   void dispalyInfo() {
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
+// }
+
+// class Student extends Person {
+//   Student(String name, int age):super(name,age);
+// } 
