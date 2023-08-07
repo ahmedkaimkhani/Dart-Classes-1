@@ -4,6 +4,11 @@ void main (){
 }
 
 class Person {
+  // Properties/attributes
+  String? name;
+  int? age;
+  // constructor
+  Person(this.name,this.age);
   // method
   void dispalyInfo (){
     print('Polymorphism practice');
@@ -11,6 +16,8 @@ class Person {
 }
 
 class Student extends Person {
+  Student(super.name, super.age);
+
   @override
   void dispalyInfo() {
     super.dispalyInfo();
