@@ -17,6 +17,9 @@ class Person {
 
 class Student extends Person {
   Student(super.name, super.age);
+  // you can also do inialize or default attributes
+  @override
+  String? get name => super.name;
 
   @override
   void dispalyInfo() {
