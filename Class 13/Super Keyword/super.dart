@@ -18,6 +18,10 @@ class Person {
     this. firstName = fn;
     this.lastName = 'Raza';
   }
+  // Method
+  void display (){
+    print('The full name of a student is $firstName $lastName');
+  }
 }
 // Parent / Super class
 class Student extends Person {
@@ -26,8 +30,16 @@ class Student extends Person {
   Student (String fnam, this.rollNo): super.onlyFirstname(fnam);
 
   String get fullName => '$firstName $lastName';
+
+  // Method
+  void display (){
+    print('The full name of a student is $firstName $lastName');
+  }
 }
 
+class BestStudent extends Student {
+  BestStudent (String fname, int rollNo): super(fname, rollNo);
+}
 
 // Super in dart
  
