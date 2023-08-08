@@ -1,9 +1,8 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
 void main (){
-  Student student = Student('Ahmed', 10);
-  print(student.fullName);
-  print(student.rollNo);
+  BestStudent bs = BestStudent('Ahmed', 10);
+  bs.display();
 }
 // Parent / Super class
 class Person {
@@ -179,3 +178,46 @@ class BestStudent extends Student {
 // Output:
 // Ahmed Raza
 // 10
+
+// 5: Super With Multilevel Inheritance
+
+// (1)
+// void main (){
+//   BestStudent bs = BestStudent('Ahmed', 10);
+//   bs.display();
+// }
+// // Parent / Super class
+// class Person {
+//   // Properties / Attributes
+//   String? firstName;
+//   String? lastName;
+//   // Constructor
+//   Person (this.firstName, this.lastName);
+
+//   // Named constructor
+//   Person.onlyFirstname (String fn){
+//     this. firstName = fn;
+//     this.lastName = 'Raza';
+//   }
+//   // Method
+//   void display (){
+//     print('The full name of a student is $firstName $lastName');
+//   }
+// }
+// // Parent / Super class
+// class Student extends Person {
+//   int? rollNo;
+//   // Constructor
+//   Student (String fnam, this.rollNo): super.onlyFirstname(fnam);
+
+//   String get fullName => '$firstName $lastName';
+
+//   // Method
+//   void display (){
+//     print('The full name of a student is $firstName $lastName');
+//   }
+// }
+
+// class BestStudent extends Student {
+//   BestStudent (String fname, int rollNo): super(fname, rollNo);
+// }
