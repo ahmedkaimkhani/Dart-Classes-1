@@ -1,23 +1,22 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
 void main (){
-  Tesla tesla = Tesla();
-  tesla.display();
+
 }
 // Parent / Super class
-class Car {
-  // Properties / Attributes
-  int numOfSeats = 4;
+class Employee {
+  // Constructor
+  Employee (String name, double salary){
+    print('Employee Constructor');
+    print('Name: $name');
+    print('Salary: $salary');
+  }
 }
 // Parent / Super class
-class Tesla extends Car {
-  // Properties / Attributes
-  int numOfSeats = 6;
-  // Method / Behavior
-  void display (){
-    print('No of seats in Tesla $numOfSeats');
-    // Accessing super properties
-    print('No of seats in Tesla ${super.numOfSeats}');
+class Manager extends Employee {
+  // Contructor
+  Manager (String name, double salary) : super (name, salary){
+    print('Manager Constructor');
   }
 }
 
