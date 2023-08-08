@@ -48,4 +48,4 @@ class Employee extends Person {
 // class Employee extends Person {
 
 // }
-// Output: Name: Ahmed & Bank Details: aaa-bbb-ccc
+// Output: Name: Ahmed & Bank Details: aaa-bbb-cc
