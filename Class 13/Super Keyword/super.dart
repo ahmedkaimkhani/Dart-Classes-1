@@ -1,7 +1,7 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
 void main (){
-
+  Manager manager = Manager('Ahmed', 50000);
 }
 // Parent / Super class
 class Employee {
