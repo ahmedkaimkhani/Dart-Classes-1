@@ -1,43 +1,33 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
+
 void main (){
-  BestStudent bs = BestStudent('Ahmed', 10);
-  bs.display();
+  Windows windows = Windows();
+  windows.display();
 }
+
 // Parent / Super class
-class Person {
-  // Properties / Attributes
-  String? firstName;
-  String? lastName;
-  // Constructor
-  Person (this.firstName, this.lastName);
-
-  // Named constructor
-  Person.onlyFirstname (String fn){
-    this. firstName = fn;
-    this.lastName = 'Raza';
-  }
+class Laptop {
   // Method
-  void display (){
-    print('The full name of a student is $firstName $lastName');
-  }
-}
-// Parent / Super class
-class Student extends Person {
-  int? rollNo;
-  // Constructor
-  Student (String fnam, this.rollNo): super.onlyFirstname(fnam);
-
-  String get fullName => '$firstName $lastName';
-
-  // Method
-  void display (){
-    print('The full name of a student is $firstName $lastName');
+  void display() {
+    print("Laptop display");
   }
 }
 
-class BestStudent extends Student {
-  BestStudent (String fname, int rollNo): super(fname, rollNo);
+class Windows extends Laptop {
+  // Method
+  void display() {
+    print("Windows display");
+    super.display();
+  }
+}
+
+class MacBookPro extends Windows {
+  // Method
+  void display() {
+    print("MacBookPro display");
+    super.display();
+  }
 }
 
 // Super in dart
@@ -220,4 +210,34 @@ class BestStudent extends Student {
 
 // class BestStudent extends Student {
 //   BestStudent (String fname, int rollNo): super(fname, rollNo);
+// }
+
+// (2)
+// void main (){
+//   Windows windows = Windows();
+//   windows.display();
+// }
+
+// // Parent / Super class
+// class Laptop {
+//   // Method
+//   void display() {
+//     print("Laptop display");
+//   }
+// }
+
+// class Windows extends Laptop {
+//   // Method
+//   void display() {
+//     print("Windows display");
+//     super.display();
+//   }
+// }
+
+// class MacBookPro extends Windows {
+//   // Method
+//   void display() {
+//     print("MacBookPro display");
+//     super.display();
+//   }
 // }
