@@ -1,24 +1,24 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
 void main (){
-  Manager manager = Manager('Ahmed', 50000);
 }
 // Parent / Super class
-class Employee {
+class Person {
+  // Properties / Attributes
+  String? firstName;
+  String? lastName;
   // Constructor
-  Employee (String name, double salary){
-    print('Employee Constructor');
-    print('Name: $name');
-    print('Salary: $salary');
-  }
+  Person (this.firstName, this.lastName);
 }
 // Parent / Super class
-class Manager extends Employee {
-  // Contructor
-  Manager (String name, double salary) : super (name, salary){
-    print('Manager Constructor');
-  }
+class Student extends Person {
+  int? rollNo;
+  // Constructor
+  Student (String fnam, String lname, this.rollNo): super(fnam,lname);
+
+  String get fullName => '$firstName $lastName';
 }
+
 
 // Super in dart
  
