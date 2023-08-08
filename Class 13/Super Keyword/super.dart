@@ -69,3 +69,31 @@ class Manager extends Employee {
 //     print('No of seats in Tesla ${super.numOfSeats}');
 //   }
 // }
+
+// 3: Super With Constructor 
+
+// (1)
+// void main (){
+//   Manager manager = Manager('Ahmed', 50000);
+// }
+// // Parent / Super class
+// class Employee {
+//   // Constructor
+//   Employee (String name, double salary){
+//     print('Employee Constructor');
+//     print('Name: $name');
+//     print('Salary: $salary');
+//   }
+// }
+// // Parent / Super class
+// class Manager extends Employee {
+//   // Contructor
+//   Manager (String name, double salary) : super (name, salary){
+//     print('Manager Constructor');
+//   }
+// }
+// Output:
+// Employee Constructor
+// Name: Ahmed
+// Salary: 50000.0
+// Manager Constructor
