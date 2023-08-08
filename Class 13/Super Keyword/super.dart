@@ -1,22 +1,23 @@
 // 1: The super keyword is used to access the parent class members.
 // 2: The super keyword is used to call the method of the parent class.
 void main (){
-  Window window = Window();
-  window.show();
+  Tesla tesla = Tesla();
+  tesla.display();
 }
 // Parent / Super class
-class Laptop {
-  // Method / Behavior
-  void show (){
-    print('Laptop show method');
-  }
+class Car {
+  // Properties / Attributes
+  int numOfSeats = 4;
 }
 // Parent / Super class
-class Window extends Laptop {
+class Tesla extends Car {
+  // Properties / Attributes
+  int numOfSeats = 6;
   // Method / Behavior
-  void show (){
-    super.show();
-    print('Windows show method');
+  void display (){
+    print('No of seats in Tesla $numOfSeats');
+    // Accessing super properties
+    print('No of seats in Tesla ${super.numOfSeats}');
   }
 }
 
@@ -46,3 +47,26 @@ class Window extends Laptop {
 // Output:
 // Laptop show method
 // Windows show method
+
+// 2: Accessing Super Properties
+// (1)
+// void main (){
+//   Tesla tesla = Tesla();
+//   tesla.display();
+// }
+// // Parent / Super class
+// class Car {
+//   // Properties / Attributes
+//   int numOfSeats = 4;
+// }
+// // Parent / Super class
+// class Tesla extends Car {
+//   // Properties / Attributes
+//   int numOfSeats = 6;
+//   // Method / Behavior
+//   void display (){
+//     print('No of seats in Tesla $numOfSeats');
+//     // Accessing super properties
+//     print('No of seats in Tesla ${super.numOfSeats}');
+//   }
+// }
