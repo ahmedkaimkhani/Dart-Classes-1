@@ -164,3 +164,6 @@ class Student extends Person {
 
 //   String get fullName => '$firstName $lastName';
 // }
+// Output:
+// Ahmed Raza
+// 10
